@@ -1,0 +1,26 @@
+{
+  "name": "projeto-pratica-i",
+  "version": "1.0.0",
+  "description": "Projeto de Pratica 1",
+  "main": "/src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oJPBarbosa/projeto-pratica-I.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oJPBarbosa/projeto-pratica-I/issues"
+  },
+  "homepage": "https://github.com/oJPBarbosa/projeto-pratica-I#readme",
+  "dependencies": {
+    "dependencies": "0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
