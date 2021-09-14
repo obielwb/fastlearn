@@ -6,10 +6,10 @@ Para clonar e rodar essa aplicação, você irá precisar de <a href="https://gi
 Em seu terminal siga os seguintes passos:
 ```
 # Clone esse repositório
-$ git clone https://github.com/oJPBarbosa/projeto-pratica-I/
+$ git clone https://github.com/oJPBarbosa/fastlearn.git
 
 # Entre na pasta do projeto
-$ cd projeto-pratica-I
+$ cd fastlearn
 
 # Instale as dependências necessárias
 $ npm install
