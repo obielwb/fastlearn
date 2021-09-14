@@ -1,4 +1,4 @@
-# projeto-pratica-I
+# FastLearn
 
 ## Dependências
 
