@@ -16,7 +16,7 @@
 O FastLearn é um repensamento do Reddit em Node.js voltado para o aprendizado de novas coisas.
 
 ## Como usar
-```sh-session
+```
 # Clone esse repositório
 $ git clone https://github.com/oJPBarbosa/fastlearn.git
 
@@ -34,7 +34,7 @@ $ npm start
 ```
 
 ## Links
-- [NodeJS](https://nodejs.org/)
+- [Node.js](https://nodejs.org/)
 - [Express](https://expressjs.com/)
 
 ## Licença
