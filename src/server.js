@@ -1,25 +1,18 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+const express = require('express');
+const app = express();
 
-http.createServer((req, res) => {
-    // res : Resposta
-    // req: Pedido
-    const file = req.url === '/' ? 'index.html' : req.url;
-    const filePath = path.join(__dirname, '/views/', file);
-    const extname = path.extname(filePath);
+const port = 3000;
 
-    const allowedFileTypes = ['.html', '.css', '.js'];
-    const allowed = allowedFileTypes.find(item => item == extname);
+app.set('view engine', 'ejs');
+app.set('views', './src/views');
 
-    if (!allowed) return 
+app.use(express.static('public'));
+app.use('/icons', express.static('./public/icons'));
+app.use('/images', express.static('./public/images'));
+app.use('/scripts', express.static('./public/scripts'));
+app.use('/css', express.static('./public/styles/css'));
 
-    fs.readFile(    
-        filePath,
-        (err, content) => {
-            if (err) throw err
+const homeRouter = require('./routes/home');
+app.use('/', homeRouter);
 
-            res.end(content); // Se não houver erro, renderizar o conteúdo
-        }
-    )
-}).listen(5000, () => console.log('Server is running'))
+app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));

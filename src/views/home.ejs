@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>FastLearn</title>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/home.css">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/9dc8dd1f76.js" crossorigin="anonymous"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar">
+    <div id="logo-container">
+      <a href="#"><img id="logo" src="/images/{}-logo.png"></a>
+    </div>
+
+    <div id="nav-util-container">
+      <div id="feed-related-container">
+        <button id="feed-button"><i class="fas fa-globe-americas"></i></button>
+        <div>
+          <button id="communities-button">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="search-container">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+        <input type="text" id="search-input" placeholder="Pesquise por comunidades">
+      </div>
+
+      <div id="action-buttons-container">
+        <button id="login-button">LOGIN</button>
+        <button id="create-post-button">POSTAR!</button>
+        <button id="sign-up-button">SIGN UP</button>
+      </div>
+    </div>
+
+    <div id="user-related-container">
+      <img class="user-picture" src="https://via.placeholder.com/48">
+      <button class="user-options-button"><i class="fas fa-chevron-down"></i></button>
+      <button class="user-options-button"><i class="fas fa-chevron-up"></i></button>
+    </div>
+  </nav>
+
+  <!-- /////  -->
+
+  <div id="container">
+
+    <div id="user-communities-container"></div>
+
+    <div id="feed-container">
+      <p id="feed-label">Feed</p>
+
+      <div id="post-container">
+        <!-- "Post Component" -->
+        <div class="post" id="">
+          <div class="post-thumbnail-container">
+            <img class="post-thumbnail" src="https://via.placeholder.com/120">
+          </div>
+
+          <div class="post-content">
+            <h2 class="post-title">{post-title}</h2>
+            <div class="post-information">
+              <h3 class="post-information-text">Postado por
+                <a href="#" class="post-author-username">
+                  <img class="post-author-picture" src="https://via.placeholder.com/32">
+                  {post-author-username}
+                </a>
+                {post-date}
+              </h3>
+            </div>
+          </div>
+
+          <div class="post-comments">
+            <h3 class="post-comments-text"><i class="far fa-comment-alt"></i>{comments}comentários</h3>
+          </div>
+
+          <div class="post-votes">
+            <button class="up-vote-button"><i class="fas fa-chevron-up"></i></button>
+            <h3 class="post-votes-text">{post-votes}</h3>
+            <button class="down-vote-button"><i class="fas fa-chevron-down"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="daily-random-post-container"></div>
+      
+    </div>
+  </div>
+</body>
+</html>

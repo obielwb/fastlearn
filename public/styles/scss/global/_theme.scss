@@ -1,0 +1,53 @@
+:root.solar {
+    --text-color: #041629;
+    --alt-text-color: #71787e;
+    
+    --bg-color: #f2f7fb;
+    --alt-bg-color: #ffffff;
+    --special-bg-color: #f5f6f8;
+
+    --accent-color: #04d361;
+    --accent-color-hover: #50df90;
+
+    --contrast-color: #0a98ff;
+    --contrast-color-hover: #7ab8ff;
+
+    --vote-bg-color: #d6ffe8;
+    --vote-bg-color-hover: #adf7cd;
+}
+
+:root.moon {
+    --text-color: #ffffff;
+    --alt-text-color: #71787e;
+    
+    --bg-color: #24292e;
+    --alt-bg-color: #2f363d;
+    --special-bg-color: #363d45;
+
+    --accent-color: #0a98ff;
+    --accent-color-hover: #7ab8ff;
+
+    --contrast-color: #04d361;
+    --contrast-color-hover: #50df90;
+
+    --vote-bg-color: #294254;
+    --vote-bg-color-hover: #47708d;
+}
+
+:root.rocket {
+    --text-color: #ffffff;
+    --alt-text-color: #475058;
+    
+    --bg-color: #0d0d0f;
+    --alt-bg-color: #121214;
+    --special-bg-color: #1b1b1f;
+
+    --accent-color: #8257e5;
+    --accent-color-hover: #a47dff;
+
+    --contrast-color: #04d361;
+    --contrast-color-hover: #50df90;
+
+    --vote-bg-color: #2a2438;
+    --vote-bg-color-hover: #3d315a;
+}

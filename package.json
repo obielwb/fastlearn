@@ -1,26 +1,24 @@
 {
-  "name": "projeto-pratica-i",
+  "name": "fastlearn",
   "version": "1.0.0",
-  "description": "Projeto de Pratica 1",
-  "main": "/src/server.js",
+  "description": "FastLearn. Revolucionando a maneira de aprender.",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oJPBarbosa/projeto-pratica-I.git"
+    "url": "git+https://github.com/oJPBarbosa/fastlearn.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "https://github.com/oJPBarbosa",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oJPBarbosa/projeto-pratica-I/issues"
+    "url": "https://github.com/oJPBarbosa/fastlearn/issues"
   },
-  "homepage": "https://github.com/oJPBarbosa/projeto-pratica-I#readme",
+  "homepage": "https://github.com/oJPBarbosa/fastlearn#readme",
   "dependencies": {
-    "dependencies": "0.0.1"
-  },
-  "devDependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
     "nodemon": "^2.0.12"
   }
 }
