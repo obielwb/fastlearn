@@ -37,6 +37,9 @@ $ npm start
 - [Node.js](https://nodejs.org/)
 - [Express](https://expressjs.com/)
 
+## Autores
+Projeto idealizado e construído por <a href="https://github.com/obielwb">Gabriel Willian</a>, <a href="https://github.com/oJPBarbosa">João P. Barbosa</a> e <a href="https://github.com/Joao2708-P">João Guilherme</a>  
+
 ## Licença
 Esse projeto está sobre licença MIT. Veja [LICENSE](https://github.com/oJPBarbosa/fastlearn/blob/main/LICENSE) para mais inforamções.
 
