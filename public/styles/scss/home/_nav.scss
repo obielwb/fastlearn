@@ -39,7 +39,7 @@ nav {
 
       .fa-globe-americas,
       .fa-home {
-        font-size: 26px;
+        font-size: 2.6rem;
       }
 
       .fa-globe-americas {
@@ -48,8 +48,8 @@ nav {
 
       .fa-chevron-down,
       .fa-chevron-up {
-        font-size: 18px;
-        margin-left: 5px;
+        font-size: 1.8rem;
+        margin-left: .5rem;
       }
 
       .fa-chevron-up {
@@ -101,13 +101,13 @@ nav {
       width: 30%;
       height: 6vh;
     
-      border-radius: 10px;
+      border-radius: 1rem;
     
       margin: auto;
         
       #search-input {
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 1.8rem;
         font-weight: 600;
   
         border: none;
@@ -119,7 +119,7 @@ nav {
         width: 70%;
         
         margin: auto;
-        margin-left: 20px;
+        margin-left: 2rem;
       }
 
       ::placeholder {
@@ -136,9 +136,9 @@ nav {
         transition: color 0.5s;
         
         .fa-search {
-          font-size: 24px;
+          font-size: 2.4rem;
 
-          margin-left: 30px;
+          margin-left: 3rem;
         }
       }
 
@@ -168,19 +168,15 @@ nav {
         color: var(--alt-bg-color);
     
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 1.8rem;
         font-weight: bold;
       
-        border-radius: 10px;
+        border-radius: 1rem;
         
-        letter-spacing: 1px;
+        letter-spacing: .1rem;
       
         height: 6vh;
         width: 10vw;
-      }
-
-      #create-post-button {
-        display: none;
       }
 
       #login-button {
@@ -189,9 +185,10 @@ nav {
 
         color: var(--text-color);
 
-        border: 4px solid var(--accent-color);
+        border: .4rem solid var(--accent-color);
 
-        margin-right: 10px;
+        margin-right: 1rem;
+        display: none;
       }
 
       #login-button:hover {
@@ -200,9 +197,13 @@ nav {
 
         color: var(--alt-bg-color);
 
-        border: 4px solid var(--accent-color-hover);
+        border: .4rem solid var(--accent-color-hover);
 
         cursor: pointer;
+      }
+
+      #sign-up-button {
+        display: none;
       }
 
       button:hover {
@@ -226,8 +227,8 @@ nav {
     .user-picture {
       vertical-align: middle;
 
-      width: 48px;
-      height: 48px;
+      width: 4.8rem;
+      height: 4.8rem;
 
       border-radius: 100%;
     }
@@ -240,12 +241,12 @@ nav {
 
       .fa-chevron-down,
       .fa-chevron-up {
-        font-size: 22px;
+        font-size: 2.2rem;
 
         color: var(--alt-text-color);
         transition: color 0.5s;
 
-        margin-left: 10px;
+        margin-left: 1rem;
       }
 
       .fa-chevron-up {
