@@ -13,6 +13,8 @@ app.use('/scripts', express.static('./public/scripts'));
 app.use('/css', express.static('./public/styles/css'));
 
 const homeRouter = require('./routes/home');
-app.use('/', homeRouter);
+const communityRouter = require('./routes/community');
 
+app.use(homeRouter);
+app.use(communityRouter);
 app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));

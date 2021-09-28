@@ -78,58 +78,5 @@ nav #user-related-container .user-options-button .fa-chevron-up { display: none;
 
 nav #user-related-container .user-options-button .fa-chevron-down:hover, nav #user-related-container .user-options-button .fa-chevron-up:hover { color: var(--contrast-color); -webkit-transition: color 0.5s; transition: color 0.5s; cursor: pointer; }
 
-#container { width: 100%; height: 87.5vh; position: absolute; bottom: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-
-#container #user-communities-container { width: 15%; height: 100%; }
-
-#container #feed-container { background-color: var(--alt-bg-color); width: 70%; height: 100%; border-top-left-radius: 2rem; border-top-right-radius: 2rem; font-family: 'Poppins', sans-serif; }
-
-#container #feed-container #feed-label { color: var(--text-color); font-size: 2.2rem; font-weight: 600; margin-top: 5rem; margin-left: 7rem; margin-bottom: 5rem; }
-
-#container #feed-container #post-container { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-#container #feed-container #post-container .post { margin-bottom: 1rem; width: 90%; height: 15rem; border: 0.4rem solid var(--special-bg-color); border-radius: .5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-#container #feed-container #post-container .post .post-thumbnail-container { width: 15%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#container #feed-container #post-container .post .post-thumbnail-container .post-thumbnail { border-radius: .5rem; width: 12rem; height: 12rem; }
-
-#container #feed-container #post-container .post .post-content { width: 50%; height: 10rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#container #feed-container #post-container .post .post-content .post-title { color: var(--text-color); font-size: 2.2rem; font-weight: 600; line-height: 2.4rem; letter-spacing: .05rem; }
-
-#container #feed-container #post-container .post .post-content .post-information { color: var(--alt-text-color); margin-top: 2rem; font-size: 1.4rem; }
-
-#container #feed-container #post-container .post .post-content .post-information .post-information-text { vertical-align: middle; font-weight: 500; }
-
-#container #feed-container #post-container .post .post-content .post-information .post-information-text a, #container #feed-container #post-container .post .post-content .post-information .post-information-text a:visited { color: var(--text-color); -webkit-transition: color 0.5s; transition: color 0.5s; text-decoration: none; }
-
-#container #feed-container #post-container .post .post-content .post-information .post-information-text a:active, #container #feed-container #post-container .post .post-content .post-information .post-information-text a:hover { color: var(--accent-color); -webkit-transition: color 0.5s; transition: color 0.5s; text-decoration: none; }
-
-#container #feed-container #post-container .post .post-content .post-information .post-author-picture { vertical-align: middle; width: 3.2rem; height: 3.2rem; border-radius: 100%; margin-left: .5rem; margin-right: .5rem; }
-
-#container #feed-container #post-container .post .post-content .post-information .post-author-username { color: var(--text-color); letter-spacing: 0.05rem; vertical-align: middle; }
-
-#container #feed-container #post-container .post .post-comments { color: var(--alt-text-color); width: 25%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#container #feed-container #post-container .post .post-comments .fa-comment-alt { vertical-align: middle; font-size: 1.8rem; margin-right: .5rem; }
-
-#container #feed-container #post-container .post .post-comments .post-comments-text { font-size: 1.6rem; }
-
-#container #feed-container #post-container .post .post-votes { width: 15%; height: 100%; border-left: 0.4rem solid var(--special-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#container #feed-container #post-container .post .post-votes .post-votes-text { color: var(--text-color); margin-top: 1rem; margin-bottom: 1rem; }
-
-#container #feed-container #post-container .post .post-votes button { width: 6rem; height: 3rem; outline: none; border: none; background: var(--vote-bg-color); border-radius: .5rem; -webkit-transition: background 0.5s; transition: background 0.5s; -webkit-box-shadow: var(--vote-bg-color) 0rem 0.2rem 1rem 0rem; box-shadow: var(--vote-bg-color) 0rem 0.2rem 1rem 0rem; }
-
-#container #feed-container #post-container .post .post-votes button:hover { cursor: pointer; background: var(--vote-bg-color-hover); -webkit-transition: background 0.5s; transition: background 0.5s; }
-
-#container #feed-container #post-container .post .post-votes .fa-chevron-up { color: var(--accent-color); font-size: 2.4rem; }
-
-#container #feed-container #post-container .post .post-votes .fa-chevron-down { color: var(--accent-color); font-size: 2.4rem; }
-
-#container #daily-random-post-container { width: 15%; height: 100%; }
-
-/* Mobile design */
 body { background: var(--bg-color); }
 /*# sourceMappingURL=home.css.map */
