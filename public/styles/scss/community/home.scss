@@ -1,0 +1,8 @@
+@import '../global/global';
+@import '../global/theme';
+@import 'nav';
+
+body {
+  background: var(--bg-color);
+}
+
