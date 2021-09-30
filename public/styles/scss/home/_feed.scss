@@ -226,5 +226,23 @@
     height: 100%;
   }
 }
+@media screen and (max-width: 960px) {
+  #container {
 
-/* Mobile design */
+    #user-communities-container,
+    #daily-random-post-container {
+      display: none !important;
+    }
+
+    #feed-container {
+      width: 100% !important;
+      
+      border-top-left-radius: 3rem;
+      border-top-right-radius: 3rem;
+
+      .post-comments {
+        display: none !important;
+      }
+    }
+  }
+}

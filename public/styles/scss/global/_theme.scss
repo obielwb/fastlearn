@@ -1,4 +1,4 @@
-:root { // .solar
+:root.solar { // .solar
     --text-color: #041629;
     --alt-text-color: #71787e;
     
@@ -34,7 +34,7 @@
     --vote-bg-color-hover: #47708d;
 }
 
-:root.rocket {
+:root { // .rocket
     --text-color: #ffffff;
     --alt-text-color: #475058;
     

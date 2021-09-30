@@ -4,11 +4,11 @@ html { height: 100%; font-size: 62.5%; }
 
 body { font-family: 'Poppins', sans-serif; }
 
-:root { --text-color: #041629; --alt-text-color: #71787e; --bg-color: #f2f7fb; --alt-bg-color: #ffffff; --special-bg-color: #f5f6f8; --accent-color: #04d361; --accent-color-hover: #50df90; --contrast-color: #0a98ff; --contrast-color-hover: #7ab8ff; --vote-bg-color: #d6ffe8; --vote-bg-color-hover: #adf7cd; }
+:root.solar { --text-color: #041629; --alt-text-color: #71787e; --bg-color: #f2f7fb; --alt-bg-color: #ffffff; --special-bg-color: #f5f6f8; --accent-color: #04d361; --accent-color-hover: #50df90; --contrast-color: #0a98ff; --contrast-color-hover: #7ab8ff; --vote-bg-color: #d6ffe8; --vote-bg-color-hover: #adf7cd; }
 
 :root.moon { --text-color: #ffffff; --alt-text-color: #71787e; --bg-color: #24292e; --alt-bg-color: #2f363d; --special-bg-color: #363d45; --accent-color: #0a98ff; --accent-color-hover: #7ab8ff; --contrast-color: #04d361; --contrast-color-hover: #50df90; --vote-bg-color: #294254; --vote-bg-color-hover: #47708d; }
 
-:root.rocket { --text-color: #ffffff; --alt-text-color: #475058; --bg-color: #0d0d0f; --alt-bg-color: #121214; --special-bg-color: #1b1b1f; --accent-color: #8257e5; --accent-color-hover: #a47dff; --contrast-color: #04d361; --contrast-color-hover: #50df90; --vote-bg-color: #2a2438; --vote-bg-color-hover: #3d315a; }
+:root { --text-color: #ffffff; --alt-text-color: #475058; --bg-color: #0d0d0f; --alt-bg-color: #121214; --special-bg-color: #1b1b1f; --accent-color: #8257e5; --accent-color-hover: #a47dff; --contrast-color: #04d361; --contrast-color-hover: #50df90; --vote-bg-color: #2a2438; --vote-bg-color-hover: #3d315a; }
 
 nav { background: var(--alt-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; height: 8vh; }
 
@@ -77,6 +77,22 @@ nav #user-related-container .user-options-button .fa-chevron-down, nav #user-rel
 nav #user-related-container .user-options-button .fa-chevron-up { display: none; }
 
 nav #user-related-container .user-options-button .fa-chevron-down:hover, nav #user-related-container .user-options-button .fa-chevron-up:hover { color: var(--contrast-color); -webkit-transition: color 0.5s; transition: color 0.5s; cursor: pointer; }
+
+nav #mobile-menu-container { width: 40px; height: 50%; display: none; }
+
+nav #mobile-menu-container #mobile-menu { width: 40px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; cursor: pointer; }
+
+nav #mobile-menu-container #mobile-menu .mobile-menu-line { width: 35px; height: 5px; border-radius: 5px; background: var(--alt-text-color); -webkit-transition: 0.5s; transition: 0.5s; }
+
+nav #mobile-menu-container #mobile-menu .mobile-menu-line:nth-child(2) { opacity: 1; }
+
+@media screen and (max-width: 960px) { nav { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; }
+  nav #nav-util-container { display: none; }
+  nav #mobile-menu-container { display: block; }
+  nav #mobile-menu.active { width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal !important; -webkit-box-direction: normal !important; -ms-flex-direction: row !important; flex-direction: row !important; -webkit-box-align: center !important; -ms-flex-align: center !important; align-items: center !important; -webkit-box-pack: center !important; -ms-flex-pack: center !important; justify-content: center !important; position: relative; }
+  nav #mobile-menu.active .mobile-menu-line:nth-child(1) { -webkit-transform: rotate(135deg); transform: rotate(135deg); position: absolute; }
+  nav #mobile-menu.active .mobile-menu-line:nth-child(2) { opacity: 0 !important; -webkit-transition: 0.5s; transition: 0.5s; }
+  nav #mobile-menu.active .mobile-menu-line:nth-child(3) { -webkit-transform: rotate(45deg); transform: rotate(45deg); position: absolute; } }
 
 body { background: var(--bg-color); }
 /*# sourceMappingURL=community.css.map */
