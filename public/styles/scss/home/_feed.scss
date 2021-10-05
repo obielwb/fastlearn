@@ -24,6 +24,10 @@
 
     font-family: 'Poppins', sans-serif;
 
+    overflow-y: scroll;
+    
+    scrollbar-width: none;
+
     #feed-label {
       color: var(--text-color);
 
@@ -219,6 +223,10 @@
         }
       }
     }
+  }
+
+  #feed-container::-webkit-scrollbar {
+    display: none;
   }
 
   #daily-random-post-container {

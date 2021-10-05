@@ -12,9 +12,11 @@ app.use('/css', express.static('./public/styles/css'));
 
 const homeRouter = require('./routes/home');
 const communityRouter = require('./routes/community');
+const postRouter = require('./routes/post');
 
-app.use(homeRouter);
-app.use(communityRouter);
+app.use('/', homeRouter);
+app.use('/community', communityRouter);
+app.use('/post', postRouter);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));

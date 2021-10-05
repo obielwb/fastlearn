@@ -1,7 +1,7 @@
 const express = require('express');
 const communityRouter = express.Router();
 
-communityRouter.get('/community', async (req, res) => {
+communityRouter.get('', async (req, res) => {
     res.render('community');
 });
 
