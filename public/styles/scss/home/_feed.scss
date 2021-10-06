@@ -24,9 +24,7 @@
 
     font-family: 'Poppins', sans-serif;
 
-    overflow-y: scroll;
-    
-    scrollbar-width: none;
+    position: relative;
 
     #feed-label {
       color: var(--text-color);
@@ -36,16 +34,25 @@
 
       margin-top: 5rem;
       margin-left: 7rem;
-      margin-bottom: 5rem;
     }
 
     #post-container { 
       width: 100%;
-      
+      height: 85%;
+
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+
+      overflow-y: scroll;
+      scrollbar-width: none;
+
+      position: absolute;
+      bottom: 0;
+
+      #no-articles-could-not-be-found {
+        font-size: 20px;
+      }
 
       .post {
         margin-bottom: 1rem;
@@ -61,8 +68,10 @@
         align-items: center;
 
         .post-thumbnail-container {
-          width: 15%;
+          width: 12.5%;
           height: 100%;
+
+          padding: 1rem;
 
           display: flex;
           flex-direction: column;
@@ -74,16 +83,43 @@
 
             width: 12rem;
             height: 12rem;
+
+            a,
+            a:visited {
+              color: var(--text-color);
+              transition: color 0.5s;
+
+              text-decoration: none;
+            }
+
+            a:active,
+            a:hover {
+              color: var(--accent-color);
+              transition: color 0.5s;
+
+              text-decoration: none;
+            }
           }
         }
 
         .post-content {
-          width: 50%;
+          width: 52.5%;
           height: 10rem;
+
+          padding-left: 1rem;
 
           display: flex;
           flex-direction: column;
           justify-content: center;
+
+          a,
+          a:visited,
+          a:active,
+          a:hover {
+            color: var(--text-color);
+
+            text-decoration: none;
+          }
           
           .post-title {
             color: var(--text-color);
@@ -220,13 +256,13 @@
 
             font-size: 2.4rem;
           }
-        }
+        }  
       }
     }
-  }
 
-  #feed-container::-webkit-scrollbar {
-    display: none;
+    #post-container::-webkit-scrollbar-track {
+      background: var(--alt-bg-color);
+    }
   }
 
   #daily-random-post-container {
@@ -261,7 +297,12 @@
       }
 
       .post-thumbnail-container {
-        width: 150px !important;
+        width: 90px !important;
+        height: 90px !important;
+      }
+      
+      .post-content {
+        width: 70% !important;
       }
     }
   }
