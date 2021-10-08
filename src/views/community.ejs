@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,10 +17,35 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <%- include('./partials/nav.ejs') %>
+    <%- include('./partials/side-bar.ejs') %>
+      <!-- ///// -->
 
-  <script src="/scripts/menu.js"></script>
+      <div id="container">
+      
+        <div id="community-head">
+          <div id="community-head-image">
+            <img class="community-thumbnail" src="/images/communityImages/culinary-community-image.png"
+              alt="Community Image">
+          </div>
+
+          <div id="community-head-content">
+            <section id="top-part">
+              <img class="community-icon" src="/images/communityIcons/culinary-community-icon.png" alt="">
+            </section>
+            <section id="bottom-part"></section>
+          </div>
+      
+        </div>
+
+        <div id="feed-label">
+
+        </div>
+      </div>
+      <script src="/scripts/menu.js"></script>
 
 </body>
+
 </html>
