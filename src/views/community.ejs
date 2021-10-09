@@ -20,32 +20,26 @@
 
 <body>
   <%- include('./partials/nav.ejs') %>
-    <%- include('./partials/side-bar.ejs') %>
-      <!-- ///// -->
+  <%- include('./partials/side-bar.ejs') %>
 
-      <div id="container">
-      
-        <div id="community-head">
-          <div id="community-head-image">
-            <img class="community-thumbnail" src="/images/communityImages/culinary-community-image.png"
-              alt="Community Image">
-          </div>
+  <!-- ///// -->
 
-          <div id="community-head-content">
-            <section id="top-part">
-              <img class="community-icon" src="/images/communityIcons/culinary-community-icon.png" alt="">
-            </section>
-            <section id="bottom-part"></section>
-          </div>
-      
-        </div>
-
-        <div id="feed-label">
-
-        </div>
+  <div id="container">
+    <div id="community-header">
+      <div id="community-image-container">
+        <img class="community-image" src="https://via.placeholder.com/1040x240"
+          alt="Community Image">
       </div>
-      <script src="/scripts/menu.js"></script>
 
+      <div id="community-header-content">
+        <section id="top-part">
+          <img class="community-icon" src="https://via.placeholder.com/120" alt="Community Icon">
+        </section>
+        <section id="bottom-part"></section>
+      </div>
+    </div>
+  </div>
+
+  <script src="/scripts/nav.js"></script>
 </body>
-
 </html>

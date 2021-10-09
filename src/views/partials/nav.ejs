@@ -1,16 +1,6 @@
-<% 
-function themeActived() {
-    const root = getComputedStyle(document.body);
-    return root.getPropertyValue('--root-theme');
-}
-
-%> 
-
-<%= console.log(themeActived()); %>
-
 <nav id="navbar">
   <div id="logo-container">
-    <a href="/"><img id="logo" src="/images/logos/<%- themeActived() %>-logo.png"></a>
+    <a href="/"><img id="logo"></a>
   </div>
 
   <div id="nav-util-container">

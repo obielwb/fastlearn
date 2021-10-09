@@ -1,8 +1,8 @@
 const express = require('express');
-const homeRouter = express.Router();
+const router = express.Router();
 const axios = require('axios');
 
-homeRouter.get('', async (req, res) => {
+router.get('', async (req, res) => {
   try {
     const response = await axios.get('https://project-tof-api.herokuapp.com/newsletter');
     res.render('home', { posts: response.data.news });
@@ -11,4 +11,4 @@ homeRouter.get('', async (req, res) => {
   }
 });
 
-module.exports = homeRouter;
+module.exports = router;
