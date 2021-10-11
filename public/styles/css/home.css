@@ -134,7 +134,7 @@ nav #mobile-menu-container #mobile-menu .mobile-menu-line:nth-child(2) { opacity
 
 #container #feed-container #post-container .post .post-content a, #container #feed-container #post-container .post .post-content a:visited, #container #feed-container #post-container .post .post-content a:active, #container #feed-container #post-container .post .post-content a:hover { color: var(--text-color); text-decoration: none; }
 
-#container #feed-container #post-container .post .post-content .post-title { color: var(--text-color); font-size: 2.2rem; font-weight: 600; line-height: 2.4rem; letter-spacing: .05rem; }
+#container #feed-container #post-container .post .post-content .post-title { color: var(--text-color); font-size: 2rem; font-weight: 600; line-height: 2.4rem; letter-spacing: .05rem; }
 
 #container #feed-container #post-container .post .post-content .post-information { color: var(--alt-text-color); margin-top: 2rem; font-size: 1.4rem; }
 
