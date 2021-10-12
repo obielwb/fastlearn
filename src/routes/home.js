@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 
-
+// Using Newscatcher API for DEMO purposes - https://newscatcherapi.com/
 router.get('', async (req, res) => {
   const options = {
     method: 'GET',
