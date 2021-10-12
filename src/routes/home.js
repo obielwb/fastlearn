@@ -4,12 +4,41 @@ const axios = require('axios');
 
 
 router.get('', async (req, res) => {
-  try {
-    const response = await axios.get('https://project-tof-api.herokuapp.com/newsletter');
-    res.render('home', { posts: response.data.news });
-  } catch (error) {
-    res.render('home', { posts: null });
+  const options = {
+    method: 'GET',
+    url: 'https://api.newscatcherapi.com/v2/search',
+    params: {
+      q: 'nasa',
+      lang: 'en',
+      sort_by: 'relevancy',
+      page: '1'
+    },
+    headers: {
+      'x-api-key': process.env.NEWSCATCHER_API_KEY
+    }
   }
+
+  let user = null;
+  let posts = null;
+
+  try {
+    const response = (await axios.request(options)).data;
+
+    if (response.status == "ok")
+      posts = response.articles;
+    
+    else
+      posts = null;
+  } catch (error) {}
+
+  // try {
+  //   const response = (await axios.get(`https://fastlearn-api.herokuapp.com/home/user/${user.name}`)).data;
+
+  //   if (response.status == "ok")
+  //     posts = response;
+  // } catch (error) {}
+
+  res.render('home', { user, posts });
 });
 
 module.exports = router;

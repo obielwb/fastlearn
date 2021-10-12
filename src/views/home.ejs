@@ -17,61 +17,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   
-  <link rel="shortcut icon" type="imagex/png" href="/images/page-icon.ico">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="imagex/png" href="/images/favicon.ico">
 </head>
 <body>
   <%- include('./partials/nav.ejs') %>
-
-  <!-- /////  -->
 
   <div id="container">
     <div id="user-communities-container"></div>
     <div id="feed-container">
       <p id="feed-label">Feed</p>
-      
-      <div id="post-container">
-        <!-- "post component" -->
-        <% if (posts != null) { %>
-          <% posts.forEach((post, index)=> { %>
-            <div class="post" id="<% post.id %>">
-              <div class="post-thumbnail-container">
-                <a class="post-anchor" href="/post/<%- post.id %>">
-                  <img class="post-thumbnail" src="<%- post.image %>">
-                </a>
-              </div>
-
-              <div class="post-content">
-                <a class="post-anchor" href="/post/<%- post.id %>">
-                  <h2 class="post-title">
-                    <%- post.title %>
-                  </h2>
-                </a>
-                <div class="post-information">
-                  <h3 class="post-information-text">Postado por
-                    <a href="/user/" class="post-author-username">
-                      <img class="post-author-picture" src="https://via.placeholder.com/32">
-                      {post-author-username}
-                    </a>
-                    <%- post.date %>
-                  </h3>
-                </div>
-              </div>
-
-              <div class="post-comments">
-                <h3 class="post-comments-text"><i class="far fa-comment-alt"></i>{comments}comentários</h3>
-              </div>
-
-              <div class="post-votes">
-                <button class="up-vote-button"><i class="fas fa-chevron-up"></i></button>
-                <h3 class="post-votes-text">{post-votes}</h3>
-                <button class="down-vote-button"><i class="fas fa-chevron-down"></i></button>
-              </div>
-            </div>
-            <% }); %>
-          <% } else { %>
-            <p id="no-articles-could-not-be-found">No articles could be found.</p>
-          <% } %>
-      </div>
+      <%- include('./partials/post.ejs') %>        
     </div>
     <div id="daily-random-post-container"></div>
   </div>

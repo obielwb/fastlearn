@@ -1,7 +1,17 @@
 @import '../global/global';
 @import '../global/theme';
 @import '../global/nav';
+@import '../global/post';
 
 body {
   background: var(--bg-color);
+}
+
+#post-container {
+  width: 70vw;
+
+  position: absolute;
+  bottom: 0;
+
+  left: 15vh;
 }

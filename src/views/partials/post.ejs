@@ -1,0 +1,42 @@
+<div id="post-container">
+  <% if (posts != null) { %>
+    <% posts.forEach((post, index)=> { %>
+      <div class="post" id="<% post._id %>">
+        <div class="post-thumbnail-container">
+          <a class="post-anchor" href="/post/<%- post._id %>">
+            <img class="post-thumbnail" src="<%- post.media %>">
+          </a>
+        </div>
+  
+        <div class="post-content">
+          <a class="post-anchor" href="/post/<%- post._id %>">
+            <h2 class="post-title">
+              <%- post.title %>
+            </h2>
+          </a>
+          <div class="post-information">
+            <h3 class="post-information-text">Postado por
+              <a href="/user/" class="post-author-username">
+                <img class="post-author-picture" src="https://via.placeholder.com/32">
+                {post-author}
+              </a>
+              <%- post.published_date %>
+            </h3>
+          </div>
+        </div>
+  
+        <div class="post-comments">
+          <h3 class="post-comments-text"><i class="far fa-comment-alt"></i><%- post.rank %><span class="post-comments-label">comentários</span></h3>
+        </div>
+  
+        <div class="post-votes">
+          <button class="up-vote-button"><i class="fas fa-chevron-up"></i></button>
+          <h3 class="post-votes-text"><%- post.score %></h3>
+          <button class="down-vote-button"><i class="fas fa-chevron-down"></i></button>
+        </div>
+      </div>
+    <% }); %>
+  <% } else { %>
+    <p id="no-articles-could-not-be-found">No posts could be found.</p>
+  <% } %>
+</div>
