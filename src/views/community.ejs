@@ -24,6 +24,7 @@
 
   <div id="container">
     <div id="community-header">
+
       <div id="community-image-container">
         <img class="community-image" src="https://via.placeholder.com/1040x240"
           alt="Community Image">
@@ -32,13 +33,31 @@
       <div id="community-header-content">
         <section id="top-part">
           <img class="community-icon" src="https://via.placeholder.com/120" alt="Community Icon">
+          <h2 id="community-title">Community</h2>
+          <button id="subscribe-in-community" class="btn-of"></button> <!-- onclick -> btn-on-->
         </section>
-        <section id="bottom-part"></section>
+        
+        <section id="bottom-part">
+          <p id="community-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consectetur adipisci illo!</p>
+          <div class="followers">
+            <p id="followers-number">000</p>
+            <p id="followers-label">followers</p>
+          </div>
+        </section>
       </div>
+    
     </div>
 
-    <div id="post-container">
-      <%- include('./partials/post.ejs') %>
+    <div id="community-content">
+      <div id="community-trail">
+        <p id="community-trail-title">
+          Trilha de 
+        </p>
+      </div>
+      
+      <div id="post-container">
+        <%- include('./partials/post.ejs') %>
+      </div>
     </div>
   </div>
 
