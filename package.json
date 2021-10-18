@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/oJPBarbosa/fastlearn.git"
   },
-  "author": "https://github.com/oJPBarbosa",
+  "author": "Gabriel Willian Bartmanovicz, João Guilherme Pereira dos Santos e João Pedro Ferreira Barbosa",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/oJPBarbosa/fastlearn/issues"
@@ -18,10 +18,11 @@
   "homepage": "https://github.com/oJPBarbosa/fastlearn#readme",
   "dependencies": {
     "axios": "^0.22.0",
-    "dependencies": "0.0.1",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.12"
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
