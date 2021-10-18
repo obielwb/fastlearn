@@ -1,0 +1,40 @@
+@import '../global/post';
+
+#container {
+    width: 100%;
+    height: 87.5vh;
+
+    position: absolute;
+    bottom: 0; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    #community-header {
+        width: 50vw;
+        background-color: aliceblue;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #community-image-container {
+            width: 23.3rem;
+            height: 103.9rem;
+            
+            img.community-image {
+                position: absolute;
+                top: 0;
+                
+                object-fit: contain;
+
+                border-radius: 10px 10px 0px 0px;
+            }
+        }
+    }
+
+    #community-content {
+
+    }
+}
