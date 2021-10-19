@@ -169,7 +169,7 @@ nav #mobile-menu-container #mobile-menu .mobile-menu-line:nth-child(2) { opacity
 
 #container { width: 100%; height: 87.5vh; position: absolute; bottom: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-#container #community-header { margin: 0; position: absolute; left: 21.8rem; top: 7rem; width: 104.0rem; height: 35.6rem; background-color: aliceblue; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#container #community-header { margin: 0; position: absolute; left: 21.8rem; top: 7rem; width: 104.0rem; height: 35.6rem; background-color: var(--alt-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border-radius: 10px; }
 
 #container #community-header #community-image-container { width: 23.3rem; height: 103.9rem; margin: 0; }
 
@@ -177,13 +177,21 @@ nav #mobile-menu-container #mobile-menu .mobile-menu-line:nth-child(2) { opacity
 
 #container #community-header #community-header-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-#container #community-header #community-header-content section#top-part { width: 80%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-weight: 600; font-size: 2rem; border-bottom: 2px solid #97A0AA; }
+#container #community-header #community-header-content section#top-part { width: 80%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-weight: 600; font-size: 2rem; border-bottom: 2px solid #97A0AA; padding-bottom: 2rem; }
 
-#container #community-header #community-header-content section#top-part img.community-icon { border-radius: 10rem; }
+#container #community-header #community-header-content section#top-part img.community-icon { border-radius: 10rem; margin-right: 1rem; }
 
-#container #community-header #community-header-content section#top-part button#subscribe-in-community.btn-of { width: 16rem; height: 4rem; border: 2px solid #DBE1E3; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 10px; }
+#container #community-header #community-header-content section#top-part h2 { margin-right: 2.5rem; }
 
-#container #community-header #community-header-content section#top-part button#subscribe-in-community.btn-on { width: 16rem; height: 4rem; }
+#container #community-header #community-header-content section#top-part button#subscribe-in-community { width: 16rem; height: 4rem; border: 2px solid #DBE1E3; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 10px; font-family: Poppins; font-style: normal; font-weight: 700; font-size: 2rem; line-height: 3rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#container #community-header #community-header-content section#top-part #subscribe-in-community.btn-on { background: none; outline: none; color: var(--text-color); -webkit-transition: background-color 0.5s, color 0.5s; transition: background-color 0.5s, color 0.5s; }
+
+#container #community-header #community-header-content section#top-part #subscribe-in-community.btn-on:hover { cursor: pointer; background-color: var(--accent-color-hover); color: var(--alt-bg-color); -webkit-transition: background-color 0.5s, color 0.5s; transition: background-color 0.5s, color 0.5s; }
+
+#container #community-header #community-header-content section#top-part #subscribe-in-community.btn-of { background-color: var(--accent-color); color: var(--text-color); border: none; -webkit-transition: background-color 0.5s, color 0.5s, border-color 0.5s; transition: background-color 0.5s, color 0.5s, border-color 0.5s; }
+
+#container #community-header #community-header-content section#top-part #subscribe-in-community.btn-of:hover { cursor: pointer; background-color: var(--accent-color-hover); color: var(--text-color); border-color: var(--accent-color-hover); -webkit-transition: background-color 0.5s, color 0.5s, border-color 0.5s; transition: background-color 0.5s, color 0.5s, border-color 0.5s; }
 
 #container #community-header #community-header-content section#bottom-part { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
 

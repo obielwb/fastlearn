@@ -18,11 +18,13 @@
 
         width: 104.0rem;
         height: 35.6rem;
-        background-color: aliceblue;
+        background-color: var(--alt-bg-color);
 
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        border-radius: 10px;
 
         #community-image-container {
             width: 23.3rem;
@@ -54,22 +56,71 @@
 
                 border-bottom: 2px solid #97A0AA;
 
+                padding-bottom: 2rem;
+
                 img.community-icon {
                     border-radius: 10rem;
+
+                    margin-right: 1rem;
                 }
 
-                button#subscribe-in-community.btn-of {
+                h2 {
+                    margin-right: 2.5rem;
+                }
+
+                button#subscribe-in-community {
                     width: 16rem;
                     height: 4rem;
 
                     border: 2px solid #DBE1E3;
                     box-sizing: border-box;
                     border-radius: 10px;
+
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    line-height: 3rem;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
-                button#subscribe-in-community.btn-on {
-                    width: 16rem;
-                    height: 4rem;
+                #subscribe-in-community.btn-on {
+                    background: none;
+                    outline: none;
+
+                    color: var(--text-color);
+
+                    transition: background-color 0.5s, color 0.5s;
+                }
+                
+                #subscribe-in-community.btn-on:hover {
+                    cursor: pointer;
+
+                    background-color: var(--accent-color-hover);
+                    color: var(--alt-bg-color);
+
+                    transition: background-color 0.5s, color 0.5s;
+                }
+
+                #subscribe-in-community.btn-of {
+                    background-color: var(--accent-color);
+                    color: var(--text-color);
+                    border: none;
+
+                    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+                }
+
+                #subscribe-in-community.btn-of:hover {
+                    cursor: pointer;
+
+                    background-color: var(--accent-color-hover);
+                    color: var(--text-color);
+                    border-color: var(--accent-color-hover);
+
+                    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
                 }
             }
 

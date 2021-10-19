@@ -2,7 +2,7 @@
 @import '../global/theme';
 @import '../global/nav';
 @import '../global/post';
-@import '../community/header';
+@import 'header';
 
 body {
   background: var(--bg-color);
