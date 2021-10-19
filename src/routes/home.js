@@ -18,15 +18,30 @@ router.get('', async (req, res) => {
     }
   }
 
-  let user = null;
-  let posts = null;
+  let user = {};
+  let posts = [];
 
   try {
     const response = (await axios.request(options)).data;
 
-    if (response.status == "ok")
-      posts = response.articles;
-    
+    if (response.status == 'ok') {
+      response.articles.forEach(article => {
+        const post = {
+          author: article.author,
+          comments: article.rank,
+          community: article.topic,
+          content: article.summary,
+          date: article.published_date,
+          id: article._id,
+          image: article.media,
+          title: article.title,
+          votes: parseInt(article._score),
+        }
+
+        posts.push(post);
+      });
+    }
+
     else
       posts = null;
   } catch (error) {}
@@ -34,7 +49,7 @@ router.get('', async (req, res) => {
   // try {
   //   const response = (await axios.get(`https://fastlearn-api.herokuapp.com/home/user/${user.name}`)).data;
 
-  //   if (response.status == "ok")
+  //   if (response.status == 'ok')
   //     posts = response;
   // } catch (error) {}
 

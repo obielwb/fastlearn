@@ -70,11 +70,9 @@ nav #nav-util-container #action-buttons-container #create-post-button { display:
 
 nav #nav-util-container #action-buttons-container #login-button, nav #nav-util-container #action-buttons-container #login-sign-up-button { background: transparent; -webkit-transition: background 0.5s, color 0.5s, border 0.5s; transition: background 0.5s, color 0.5s, border 0.5s; color: var(--text-color); border: 0.4rem solid var(--accent-color); margin-right: 1rem; }
 
-nav #nav-util-container #action-buttons-container #login-button { display: none; }
-
 nav #nav-util-container #action-buttons-container #login-button:hover, nav #nav-util-container #action-buttons-container #login-sign-up-button:hover { background: var(--accent-color-hover); -webkit-transition: background 0.5s, color 0.5s, border 0.5s; transition: background 0.5s, color 0.5s, border 0.5s; color: var(--alt-bg-color); border: 0.4rem solid var(--accent-color-hover); cursor: pointer; }
 
-nav #nav-util-container #action-buttons-container #sign-up-button { display: none; }
+nav #nav-util-container #action-buttons-container #login-sign-up-button { display: none; }
 
 nav #nav-util-container #action-buttons-container button:hover { background: var(--accent-color-hover); -webkit-transition: background 0.5s; transition: background 0.5s; cursor: pointer; }
 
@@ -150,7 +148,7 @@ nav #mobile-menu-container #mobile-menu .mobile-menu-line:nth-child(2) { opacity
 
 #post-container .post .post-votes { width: 15%; height: 100%; border-left: 0.4rem solid var(--special-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-#post-container .post .post-votes .post-votes-text { color: var(--text-color); margin-top: 1rem; margin-bottom: 1rem; }
+#post-container .post .post-votes .post-votes-text { color: var(--text-color); font-size: 2rem; letter-spacing: 1px; margin-top: .5rem; margin-bottom: .5rem; }
 
 #post-container .post .post-votes button { width: 6rem; height: 3rem; outline: none; border: none; background: var(--vote-bg-color); border-radius: .5rem; -webkit-transition: background 0.5s; transition: background 0.5s; -webkit-box-shadow: var(--vote-bg-color) 0rem 0.2rem 1rem 0rem; box-shadow: var(--vote-bg-color) 0rem 0.2rem 1rem 0rem; }
 

@@ -1,15 +1,15 @@
 <div id="post-container">
   <% if (posts != null) { %>
     <% posts.forEach((post, index)=> { %>
-      <div class="post" id="<% post._id %>">
+      <div class="post" id="<% post.id %>">
         <div class="post-thumbnail-container">
-          <a class="post-anchor" href="/post/<%- post._id %>">
-            <img class="post-thumbnail" src="<%- post.media %>">
+          <a class="post-anchor" href="/post/<%- post.id %>">
+            <img class="post-thumbnail" src="<%- post.image %>">
           </a>
         </div>
   
         <div class="post-content">
-          <a class="post-anchor" href="/post/<%- post._id %>">
+          <a class="post-anchor" href="/post/<%- post.id %>">
             <h2 class="post-title">
               <%- post.title %>
             </h2>
@@ -18,20 +18,24 @@
             <h3 class="post-information-text">Postado por
               <a href="/user/" class="post-author-username">
                 <img class="post-author-picture" src="https://via.placeholder.com/32">
-                {post-author}
+                <% if (post.author != null) { %>
+                  <%- post.author %>
+                <% } else { %>
+                  unknown
+                <% } %>
               </a>
-              <%- post.published_date %>
+              <%- post.date %>
             </h3>
           </div>
         </div>
   
         <div class="post-comments">
-          <h3 class="post-comments-text"><i class="far fa-comment-alt"></i><%- post.rank %><span class="post-comments-label">comentários</span></h3>
+          <h3 class="post-comments-text"><i class="far fa-comment-alt"></i><%- post.comments %><span class="post-comments-label">comentários</span></h3>
         </div>
   
         <div class="post-votes">
           <button class="up-vote-button"><i class="fas fa-chevron-up"></i></button>
-          <h3 class="post-votes-text"><%- post.score %></h3>
+          <h3 class="post-votes-text"><%- post.votes %></h3>
           <button class="down-vote-button"><i class="fas fa-chevron-down"></i></button>
         </div>
       </div>

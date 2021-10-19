@@ -202,7 +202,7 @@ nav {
       }
 
       #login-button {
-        display: none;
+        // display: none;
       }
 
       #login-button:hover,
@@ -218,6 +218,10 @@ nav {
       }
 
       #sign-up-button {
+        // display: none;
+      }
+
+      #login-sign-up-button {
         display: none;
       }
 
