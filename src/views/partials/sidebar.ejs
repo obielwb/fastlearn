@@ -1,3 +1,12 @@
-<div id="side-bar">
-    
+<div id="sidebar">
+    <% communities.forEach((community, index) => { %>
+        <% if (index < 7) { %>
+          <div class="sidebar-community">
+            <a href="/community/<%- community.name %>">
+              <img src="<%- community.image %>">
+              <h3>/<%- community.name %></h3>
+            </a>
+          </div>
+        <% } %>
+      <% }); %>
 </div>
