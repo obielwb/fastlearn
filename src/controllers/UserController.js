@@ -9,6 +9,7 @@ module.exports = {
         'email',
         'username',
         'avatar',
+        'created_at'
       ],
     });
 
@@ -25,6 +26,7 @@ module.exports = {
         'email',
         'username',
         'avatar',
+        'created_at'
       ],
     });
 

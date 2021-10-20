@@ -6,13 +6,16 @@ class User extends Model {
       email: DataTypes.STRING,
       password: DataTypes.STRING,
       username: DataTypes.STRING,
-      avatar: DataTypes.BLOB,
+      avatar: DataTypes.STRING
     }, {
       sequelize
     });
   }
 
-  static associate(models) {}
+  static associate(models) {
+    this.belongsToMany(models.Subscription, { foreignKey: 'user_id', as: 'subscription' });
+    this.hasMany(models.Post, { foreignKey: 'user_id', as: 'post' });
+  }
 }
 
 module.exports = User;
