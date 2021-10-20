@@ -24,7 +24,6 @@
 
 <body>
   <%- include('./partials/nav.ejs') %>
-  <%- include('./partials/sidebar.ejs') %>
 
 
   <div id="container">
@@ -39,7 +38,7 @@
         <section id="top-part">
           <img class="community-icon" src="https://via.placeholder.com/120" alt="Community Icon">
           <h2 id="community-title">Community</h2>
-          <button id="subscribe-in-community" class="btn-on">Membro</button> <!-- onclick -> btn-on-->
+          <button id="subscribe-in-community" class="not-subscribed">Entrar</button>
         </section>
         
         <section id="bottom-part">
@@ -68,6 +67,6 @@
 
   <script src="/scripts/nav.js"></script>
   <script src="/scripts/theme.js"></script>
-  <script src="/scripts/community-sigin-btn.js"></script>
+  <script src="/scripts/community.js"></script>
 </body>
 </html>

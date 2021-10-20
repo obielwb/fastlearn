@@ -64,17 +64,19 @@
                     margin-right: 1rem;
                 }
 
-                h2 {
+                #community-title {
                     margin-right: 2.5rem;
+
+                    color: var(--text-color);
                 }
 
                 button#subscribe-in-community {
                     width: 16rem;
                     height: 4rem;
 
-                    border: 2px solid #DBE1E3;
+                    border: 2px solid var(--alt-text-color);
                     box-sizing: border-box;
-                    border-radius: 10px;
+                    border-radius: 7.5px;
 
                     font-family: Poppins;
                     font-style: normal;
@@ -87,25 +89,25 @@
                     justify-content: center;
                 }
 
-                #subscribe-in-community.btn-on {
+                #subscribe-in-community.subscribed {
                     background: none;
                     outline: none;
 
-                    color: var(--text-color);
+                    color: var(--alt-text-color);
 
                     transition: background-color 0.5s, color 0.5s;
                 }
                 
-                #subscribe-in-community.btn-on:hover {
+                #subscribe-in-community.subscribed:hover {
                     cursor: pointer;
 
-                    background-color: var(--accent-color-hover);
+                    background-color: var(--alt-text-color);
                     color: var(--alt-bg-color);
 
                     transition: background-color 0.5s, color 0.5s;
                 }
 
-                #subscribe-in-community.btn-of {
+                #subscribe-in-community.not-subscribed {
                     background-color: var(--accent-color);
                     color: var(--text-color);
                     border: none;
@@ -113,7 +115,7 @@
                     transition: background-color 0.5s, color 0.5s, border-color 0.5s;
                 }
 
-                #subscribe-in-community.btn-of:hover {
+                #subscribe-in-community.not-subscribed:hover {
                     cursor: pointer;
 
                     background-color: var(--accent-color-hover);

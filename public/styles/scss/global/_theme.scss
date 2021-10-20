@@ -19,7 +19,7 @@
     --root-theme: 'solar';
 }
 
-:root { // .moon 
+:root.moon { // .moon 
     --text-color: #ffffff;
     --alt-text-color: #71787e;
     
@@ -40,7 +40,7 @@
     --root-theme: 'moon';
 }
 
-:root.rocket { // .rocket
+:root { // .rocket
     --text-color: #ffffff;
     --alt-text-color: #475058;
     

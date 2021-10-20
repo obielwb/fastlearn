@@ -11,14 +11,8 @@ app.use('/images', express.static('./public/images'));
 app.use('/scripts', express.static('./public/scripts'));
 app.use('/css', express.static('./public/styles/css'));
 
-const homeRouter = require('./routes/home');
-const communityRouter = require('./routes/community');
-const postRouter = require('./routes/post');
-const userRouter = require('./routes/user');
+const routes = require('./routes');
 
-app.use('/', homeRouter);
-app.use('/community', communityRouter);
-app.use('/post', postRouter);
-app.use('/user', userRouter);
+app.use(routes);
 
 module.exports = app;
