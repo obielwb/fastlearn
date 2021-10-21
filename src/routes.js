@@ -1,4 +1,5 @@
 const express = require('express');
+
 const UserController = require('./controllers/UserController');
 const PostController = require('./controllers/PostController');
 const CommunityController = require('./controllers/CommunityController');
