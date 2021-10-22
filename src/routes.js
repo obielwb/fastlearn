@@ -7,14 +7,14 @@ const CommunityController = require('./controllers/CommunityController');
 const routes = express.Router();
 
 routes.get('/users', UserController.index);
-routes.get('/users/:username', UserController.get);
+routes.get('/users/:username', UserController.show);
 routes.post('/users', UserController.store);
 
 routes.get('/posts', PostController.index);
-routes.get('/posts/:id', PostController.get);
+routes.get('/posts/:id', PostController.show);
 routes.post('/posts', PostController.store);
 
 routes.get('/community', CommunityController.index);
-routes.get('/community/:name', CommunityController.get);
+routes.get('/community/:name', CommunityController.show);
 
 module.exports = routes;

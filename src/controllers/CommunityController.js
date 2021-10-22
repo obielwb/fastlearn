@@ -7,7 +7,7 @@ module.exports = {
         return res.json(communities);
     },
 
-    async get(req, res) {
+    async show(req, res) {
         const { name } = req.params; 
 
         const community = await Community.findOne({

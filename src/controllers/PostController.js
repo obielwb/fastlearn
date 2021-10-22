@@ -8,7 +8,7 @@ module.exports = {
     return res.json(posts);
   },
 
-  async get(req, res) {
+  async show(req, res) {
     const { id } = req.params;
 
     const post = await Post.findOne({

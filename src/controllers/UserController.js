@@ -16,7 +16,7 @@ module.exports = {
     return res.json(users);
   },
 
-  async get(req, res) {
+  async show(req, res) {
     const { username } = req.params;
 
     const user = await User.findOne({
