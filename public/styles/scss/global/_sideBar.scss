@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+#sidebar
+{
+    position: absolute;
+    width: 17em;
+    overflow: hidden;
+    width: 100%;
+    top:0;
+    .sedebar-community h3{
+         margin: 20px;
+         font-family: 'Poppins',sans-serif;
+         color: alt text color;
+    }
+    img.sidebar-community
+    {
+       border: 100%;
+       width: 32;
+       height: 32;
+    }
+}
