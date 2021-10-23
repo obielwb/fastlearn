@@ -1,6 +1,6 @@
 <div id="post-container">
   <% if (posts != null) { %>
-    <% posts.forEach((post, index)=> { %>
+    <% posts.forEach((post) => { %>
       <div class="post" id="<% post.id %>">
         <div class="post-thumbnail-container">
           <a class="post-anchor" href="/post/<%- post.id %>">
@@ -41,6 +41,6 @@
       </div>
     <% }); %>
   <% } else { %>
-    <p id="no-articles-could-not-be-found">No posts could be found.</p>
+    <p id="no-posts-could-be-found">No posts could be found! Try again later.</p>
   <% } %>
 </div>
