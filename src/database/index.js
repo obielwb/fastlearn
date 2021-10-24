@@ -1,24 +1,27 @@
 const Sequelize = require('sequelize');
-const config = require('../config/database');
 
+const Comments = require('../models/Comment');
 const Community = require('../models/Community');
 const Path = require('../models/Path');
 const Post = require('../models/Post');
 const Subscription = require('../models/Subscription');
 const User = require('../models/User');
 
-const connection = new Sequelize(config);
+const config = require('../config/database');
 
-Community.init(connection);
-Path.init(connection);
-Post.init(connection);
-Subscription.init(connection);
-User.init(connection);
+const models = [Comments, Community, Path, Post, Subscription, User];
 
-Community.associate(connection.models);
-Path.associate(connection.models);
-Post.associate(connection.models);
-Subscription.associate(connection.models);
-User.associate(connection.models);
+class DataBase {
+  constructor() {
+    this.init();
+  }
+  
+  init() {
+    const connection = new Sequelize(config);
 
-module.exports = connection;
+    models.map(model => model.init(connection));
+    models.map(model => model.associate(connection.models));
+  }
+}
+
+module.exports = new DataBase();
