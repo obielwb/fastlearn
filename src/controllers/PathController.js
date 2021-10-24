@@ -10,11 +10,11 @@ module.exports = {
   async show(req, res) {
     const { path_id } = req.params;
 
-    const post = await Path.findAll({
+    const path = await Path.findAll({
       where: { path_id }
     });
 
-    return res.json(post);
+    return res.json(path);
   },
 
   async store(req, res) {
