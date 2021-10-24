@@ -1,6 +1,6 @@
 const express = require('express');
 
-const CommentsController = require('./controllers/CommentsController');
+const CommentController = require('./controllers/CommentController');
 const CommunityController = require('./controllers/CommunityController');
 const PathController = require('./controllers/PathController');
 const PostController = require('./controllers/PostController');
@@ -9,9 +9,9 @@ const UserController = require('./controllers/UserController');
 
 const routes = express.Router();
 
-routes.get('/comments', CommentsController.index);
-routes.get('/comments/:id', CommentsController.show);
-routes.post('/comments/:id', CommentsController.store);
+routes.get('/comments', CommentController.index);
+routes.get('/comments/:id', CommentController.show);
+routes.post('/comments/:id', CommentController.store);
 
 routes.get('/communities', CommunityController.index);
 routes.get('/communities/:name', CommunityController.show);
