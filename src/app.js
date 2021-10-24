@@ -1,3 +1,4 @@
+// TODO: get all the relations working properly
 require('dotenv').config();
 require('./database');
 
