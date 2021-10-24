@@ -4,12 +4,10 @@
   "description": "FastLearn. Revolucionando a maneira de aprender.",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oJPBarbosa/fastlearn.git"
-  },
+  "repository": "git+https://github.com/oJPBarbosa/fastlearn.git",
   "author": "Gabriel Willian Bartmanovicz, João Guilherme Pereira dos Santos e João Pedro Ferreira Barbosa",
   "license": "MIT",
   "bugs": {
