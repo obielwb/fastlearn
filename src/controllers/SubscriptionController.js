@@ -1,4 +1,5 @@
 const Subscription = require('../models/Subscription');
+const { v4 } = require('uuid');
 
 module.exports = {
   async index(req, res) {
@@ -19,8 +20,10 @@ module.exports = {
 
   async store(req, res) {
     const { user_id, community_id } = req.body;
+    const id = v4();
 
-    await Subscription.create({ 
+    await Subscription.create({
+      id,
       user_id,
       community_id
     });

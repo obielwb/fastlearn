@@ -1,5 +1,6 @@
 const User = require('../models/User');
 const { hash, compare } = require('bcrypt');
+const { v4 } = require('uuid');
 
 module.exports = {
   async index(req, res) {
@@ -35,10 +36,11 @@ module.exports = {
 
   async store(req, res) {
     const { email, password, username, avatar } = req.body;
-
+    const id = v4();
     const hashedPassword = await hash(password, 8);
 
-    await User.create({ 
+    await User.create({
+      id,
       email,
       password: hashedPassword,
       username,
