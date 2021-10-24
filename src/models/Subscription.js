@@ -11,8 +11,8 @@ class Subscription extends Model {
   }
 
   static associate(models) {
-    this.hasOne(models.User, { foreignKey: 'user_id', as: 'user' });
-    this.hasOne(models.Community, { foreignKey: 'community_id', as: 'community' });
+    this.hasOne(models.User, { foreignKey: 'id', as: 'user' });
+    this.hasOne(models.Community, { foreignKey: 'id', as: 'community' });
   }
 }
 

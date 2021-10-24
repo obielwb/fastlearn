@@ -8,10 +8,10 @@ module.exports = {
   },
 
   async show(req, res) {
-    const { id } = req.params;
+    const { user_id } = req.params;
 
-    const subscription = await Subscription.findOne({
-      where: { id }
+    const subscription = await Subscription.findAll({
+      where: { user_id }
     });
 
     return res.json(subscription);
@@ -20,11 +20,13 @@ module.exports = {
   async store(req, res) {
     const { user_id, community_id } = req.body;
 
-    const subscription = await Subscription.create({ 
+    await Subscription.create({ 
       user_id,
       community_id
     });
 
-    return res.json(subscription);
+    return res.json(Subscription.findAll({
+      where: { user_id }
+    }));
   }
 };

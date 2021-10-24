@@ -17,10 +17,10 @@ module.exports = {
   },
 
   async show(req, res) {
-    const { username } = req.params;
+    const { id } = req.params;
 
     const user = await User.findOne({
-      where: { username },
+      where: { id },
       attributes: [
         'id',
         'email',
@@ -38,13 +38,15 @@ module.exports = {
 
     const hashedPassword = await hash(password, 8);
 
-    const user = await User.create({ 
+    await User.create({ 
       email,
       password: hashedPassword,
       username,
       avatar
     });
 
-    return res.json(user);
+    return res.json(await User.findOne({
+      where: { email }
+    }));
   }
 };
