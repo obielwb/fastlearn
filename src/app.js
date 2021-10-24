@@ -1,4 +1,5 @@
 // TODO: get all the relations working properly
+// TODO: fix uuid errors
 require('dotenv').config();
 require('./database');
 
