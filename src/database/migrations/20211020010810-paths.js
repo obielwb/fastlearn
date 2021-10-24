@@ -9,6 +9,10 @@ module.exports = {
         autoIncrement: true,
         allowNull: false
       },
+      path_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
       post_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
