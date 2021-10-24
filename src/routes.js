@@ -11,11 +11,11 @@ const routes = express.Router();
 
 routes.get('/comments', CommentController.index);
 routes.get('/comments/:id', CommentController.show);
-routes.post('/comments/:id', CommentController.store);
+routes.post('/comments', CommentController.store);
 
 routes.get('/communities', CommunityController.index);
 routes.get('/communities/:name', CommunityController.show);
-routes.post('/communities/:name', CommunityController.store);
+routes.post('/communities', CommunityController.store);
 
 routes.get('/paths', PathController.index);
 routes.get('/paths/:path_id', PathController.show);
