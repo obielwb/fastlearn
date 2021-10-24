@@ -13,7 +13,7 @@ class Community extends Model {
   }
 
   static associate(models) {
-    this.belongsToMany(models.Subscription, { foreignKey: 'community_id', as: 'community' });
+    // this.belongsToMany(models.Subscription, { foreignKey: 'community_id', as: 'community' });
   }
 }
 
