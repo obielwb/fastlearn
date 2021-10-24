@@ -12,8 +12,8 @@ class Path extends Model {
   }
 
   static associate(models) {
-    this.hasMany(models.Post, { foreignKey: 'post_id', as: 'post' });
-    this.belongsTo(models.Community, { foreignKey: 'community_id', as: 'community' });
+    this.belongsTo(models.Post, { foreignKey: 'id', as: 'post' });
+    this.hasOne(models.Community, { foreignKey: 'community_id', as: 'community' });
   }
 }
 

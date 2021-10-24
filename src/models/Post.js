@@ -14,8 +14,8 @@ class Post extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.User, { foreignKey: 'user_id', as: 'user' });
-    this.belongsTo(models.Path, { foreignKey: 'path_id', as: 'path' });
+    this.hasOne(models.User, { foreignKey: 'user_id', as: 'user' });
+    this.hasMany(models.Path, { foreignKey: 'post_id', as: 'path' });
   }
 }
 

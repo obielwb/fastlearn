@@ -13,8 +13,8 @@ class User extends Model {
   }
 
   static associate(models) {
-    // this.belongsToMany(models.Subscription, { foreignKey: 'user_id', as: 'subscription' });
-    // this.hasMany(models.Post, { foreignKey: 'user_id', as: 'post' });
+    this.hasMany(models.Subscription, { foreignKey: 'user_id', as: 'subscription' });
+    this.belongsToMany(models.Post, { foreignKey: 'user_id', as: 'post' });
   }
 }
 
