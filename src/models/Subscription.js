@@ -3,7 +3,10 @@ const { Model, DataTypes } = require('sequelize');
 class Subscription extends Model {
   static init(sequelize) {
     super.init({
-      id: DataTypes.STRING,
+      id: {
+        type: DataTypes.STRING, 
+        primaryKey: true
+      },
       user_id: DataTypes.INTEGER,
       community_id: DataTypes.INTEGER
     }, {
