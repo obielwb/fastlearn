@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 *, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
 
 *::-webkit-scrollbar { width: 1.2rem; }
@@ -168,11 +167,25 @@ nav #mobile-menu-container #mobile-menu .mobile-menu-line:nth-child(2) { opacity
   .post .post-thumbnail-container { width: 90px !important; height: 90px !important; }
   .post .post-content { width: 70% !important; } }
 
-#sidebar { position: absolute; width: 17em; overflow: hidden; width: 100%; top: 0; }
+#sidebar { width: 15%; height: 100%; }
 
-#sidebar .sedebar-community h3 { margin: 20px; font-family: 'Poppins',sans-serif; color: alt text color; }
+#sidebar #sidebar-label { font-family: 'Poppins', sans-serif; color: var(--text-color); font-size: 18px; margin-left: 20px; }
 
-#sidebar img.sidebar-community { border: 100%; width: 32; height: 32; }
+#sidebar #sidebar-container { width: 100%; height: 100%; margin-top: 10px; }
+
+#sidebar #sidebar-container .sidebar-community { margin-top: 15px; margin-left: 20px; }
+
+#sidebar #sidebar-container .sidebar-community .community-anchor { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; color: var(--text-color); letter-spacing: .5px; text-decoration: none; }
+
+#sidebar #sidebar-container .sidebar-community .community-anchor :visited { color: var(--text-color); }
+
+#sidebar #sidebar-container .sidebar-community .community-anchor :hover { color: var(--contrast-color); -webkit-transition: color 0.5s; transition: color 0.5s; }
+
+#sidebar #sidebar-container .sidebar-community .community-anchor :active { color: var(--accent-color); -webkit-transition: color 0.5s; transition: color 0.5s; }
+
+#sidebar #sidebar-container .sidebar-community .community-anchor h3 { font-family: 'Poppins', sans-serif; font-size: 16px; margin-left: 7.5px; -webkit-transition: color 0.5s; transition: color 0.5s; }
+
+#sidebar #sidebar-container .sidebar-community .community-anchor img { border-radius: 100%; width: 38px; height: 38px; }
 
 #container { width: 100%; height: 87.5vh; position: absolute; bottom: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 

@@ -1,13 +1,15 @@
 <div id="sidebar">
-  <h2>FAVORITOS</h2>
-    <% communities.forEach((community, index) => { %>
+  <h2 id="sidebar-label">SEGUINDO</h2>
+    <div id="sidebar-container">
+      <% posts.forEach((community, index) => { %>
         <% if (index < 7) { %>
           <div class="sidebar-community">
-            <a href="/community/<%- community.name %>">
+            <a href="/community/<%- community.author %>" class="community-anchor">
               <img src="<%- community.image %>">
-              <h3>/<%- community.name %></h3>
+              <h3>/<%- community.author %></h3>
             </a>
           </div>
         <% } %>
       <% }); %>
+    </div>
 </div>

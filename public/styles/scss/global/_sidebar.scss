@@ -1,0 +1,71 @@
+#sidebar
+{
+    width: 15%;
+    height: 100%;
+
+    #sidebar-label {
+        font-family: 'Poppins', sans-serif;
+        color: var(--text-color);
+
+        font-size: 18px;
+
+        margin-left: 20px;
+    }
+
+    #sidebar-container {
+        width: 100%;
+        height: 100%;
+
+        margin-top: 10px;
+
+        .sidebar-community {
+            margin-top: 15px;
+            margin-left: 20px;
+
+            .community-anchor {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                width: 100%;
+
+                color: var(--text-color);
+                letter-spacing: .5px;
+                text-decoration: none;
+
+                :visited {
+                    color: var(--text-color);
+                }
+
+                :hover {
+                    color: var(--contrast-color);
+
+                    transition: color 0.5s;
+                }
+                
+                :active {
+                    color: var(--accent-color);
+
+                    transition: color 0.5s;
+                }
+
+                h3 {
+                    font-family: 'Poppins', sans-serif;
+    
+                    font-size: 16px;
+
+                    margin-left: 7.5px;
+
+                    transition: color 0.5s;
+                }
+    
+                img {
+                    border-radius: 100%;
+        
+                    width: 38px;
+                    height: 38px;
+                }
+            }            
+        }
+    }
+}
