@@ -24,13 +24,13 @@ $ git clone https://github.com/project-fastlearn/fastlearn-frontend.git
 $ cd fastlearn
 
 # Instale as dependências
-$ npm install
+$ yarn
 
 # Instale as dependências de desenvolvimento
-$ npm install nodemon -D
+$ yarn add nodemon -D
 
 # Inicie a aplicação
-$ npm start
+$ yarn start
 ```
 
 ## Links

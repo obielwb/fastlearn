@@ -8,7 +8,7 @@ router.get('', async (req, res) => {
     method: 'GET',
     url: 'https://api.newscatcherapi.com/v2/search',
     params: {
-      q: 'nasa',
+      q: 'unicamp',
       lang: 'en',
       sort_by: 'relevancy',
       page: '1'
@@ -28,14 +28,14 @@ router.get('', async (req, res) => {
       response.articles.forEach(article => {
         const post = {
           author: article.author,
-          comments: article.rank,
+          comments: parseInt(article._score),
           community: article.topic,
           content: article.summary,
           date: article.published_date,
           id: article._id,
           image: article.media,
           title: article.title,
-          votes: parseInt(article._score),
+          votes: parseInt(article.rank),
         }
 
         posts.push(post);
