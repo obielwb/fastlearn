@@ -8,22 +8,22 @@ module.exports = {
     },
 
     async show(req, res) {
-        const { name } = req.params; 
+        const { id } = req.params;
 
         const community = await Community.findOne({
-            where: { name }
+            where: { id }
         });
 
         return res.json(community);
     },
 
     async store(req, res) {
-        const { name, description, icon, banner } = req.body; 
+        const { name, description, icon, banner } = req.body;
 
         const community = await Community.create({
-            name, 
-            description, 
-            icon, 
+            name,
+            description,
+            icon,
             banner
         });
 

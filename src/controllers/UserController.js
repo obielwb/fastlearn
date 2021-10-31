@@ -48,7 +48,7 @@ module.exports = {
     });
 
     return res.json(await User.findOne({
-      where: { email }
+      where: { id }
     }));
   }
 };

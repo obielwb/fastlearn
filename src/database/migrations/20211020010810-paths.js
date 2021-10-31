@@ -9,29 +9,9 @@ module.exports = {
         autoIncrement: true,
         allowNull: false
       },
-      path_id: {
-        type: Sequelize.INTEGER,
+      name: {
+        type: Sequelize.STRING,
         allowNull: false
-      },
-      post_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model: 'posts',
-          key: 'id'
-        },
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE'
-      },
-      community_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model: 'communities',
-          key: 'id'
-        },
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE'
       },
       created_at: {
         type: Sequelize.DATE,
