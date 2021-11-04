@@ -11,4 +11,8 @@ routes.use('/community', community);
 routes.use('/post', post);
 routes.use('/user', user);
 
+// temporary routes
+const temp = require('./temp');
+routes.use('/temp', temp);
+
 module.exports = routes;
