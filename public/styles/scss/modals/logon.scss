@@ -1,0 +1,36 @@
+@import 'modal';
+
+#logon-modal {
+  margin: 20% auto;
+  width: 70%;
+
+  padding: 20px;
+
+  background: red;
+
+  border-radius: 10px;
+
+  #modal-content {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: green;
+
+    #about-container {
+      width: 50%;
+      height: 100%;
+
+      background: blue;
+    }
+
+    #logon-container {
+      width: 50%;
+      height: 100%;
+
+      background: red;
+    }
+  }
+}
