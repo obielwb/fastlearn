@@ -1,10 +1,38 @@
-.modal { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 1; overflow: auto; background: #0003; }
+*, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
 
-#logon-modal { margin: 20% auto; width: 70%; padding: 20px; background: red; border-radius: 10px; }
+*::-webkit-scrollbar { width: 1.2rem; }
 
-#logon-modal #modal-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; height: 100%; background-color: green; }
+::-webkit-scrollbar-thumb { background-color: #49494a; border-radius: 2.0rem; border: 0.3rem solid var(--alt-bg-color); }
 
-#logon-modal #modal-content #about-container { width: 50%; height: 100%; background: blue; }
+::-webkit-scrollbar-thumb:hover { background-color: #383838; }
 
-#logon-modal #modal-content #logon-container { width: 50%; height: 100%; background: red; }
+::-webkit-scrollbar-track { background: transparent; }
+
+html { height: 100%; font-size: 62.5%; }
+
+body { font-family: 'Poppins', sans-serif; }
+
+:root.solar { --text-color: #041629; --alt-text-color: #71787e; --bg-color: #f2f7fb; --alt-bg-color: #ffffff; --special-bg-color: #f5f6f8; --shadow-bg-color: #bdc1c3; --accent-color: #04d361; --accent-color-hover: #50df90; --contrast-color: #0a98ff; --contrast-color-hover: #7ab8ff; --vote-bg-color: #d6ffe8; --vote-bg-color-hover: #adf7cd; --root-theme: 'solar'; }
+
+:root.moon { --text-color: #ffffff; --alt-text-color: #71787e; --bg-color: #24292e; --alt-bg-color: #2f363d; --special-bg-color: #363d45; --shadow-bg-color: #3e4747; --accent-color: #0a98ff; --accent-color-hover: #7ab8ff; --contrast-color: #04d361; --contrast-color-hover: #50df90; --vote-bg-color: #294254; --vote-bg-color-hover: #47708d; --root-theme: 'moon'; }
+
+:root { --text-color: #ffffff; --alt-text-color: #475058; --bg-color: #0d0d0f; --alt-bg-color: #121214; --special-bg-color: #1b1b1f; --shadow-bg-color: #2a2a2a; --accent-color: #8257e5; --accent-color-hover: #a47dff; --contrast-color: #04d361; --contrast-color-hover: #50df90; --vote-bg-color: #2a2438; --vote-bg-color-hover: #3d315a; --root-theme: 'rocket'; }
+
+.modal { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 1; overflow: hidden; background: #0009; display: none; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.modal .model-container { background: var(--alt-bg-color); border-radius: 20px; width: 768px; min-width: 300px; height: 648px; min-height: 150px; padding: 20px; position: relative; }
+
+.modal .model-container .close-button { position: absolute; top: 3%; right: 3%; background: none; border: none; outline: none; font-size: 36px; font-weight: bold; cursor: pointer; color: var(--shadow-bg-color); -webkit-transition: color 0.5s; transition: color 0.5s; }
+
+.modal .model-container .close-button:hover { color: #ee5555; -webkit-transition: color 0.5s; transition: color 0.5s; }
+
+.modal.show { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+@media screen and (max-width: 960px) { .model-container { width: 70vw; height: 90vh; } }
+
+#logon-modal-container #modal-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; height: 100%; background-color: green; }
+
+#logon-modal-container #modal-content #about-container { width: 50%; height: 100%; background: blue; }
+
+#logon-modal-container #modal-content #logon-container { width: 50%; height: 100%; background: red; }
 /*# sourceMappingURL=logon.css.map */

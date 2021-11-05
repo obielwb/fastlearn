@@ -1,3 +1,6 @@
+@import '../global/global';
+@import '../global/theme';
+
 .modal {
   width: 100%;
   height: 100%;
@@ -8,7 +11,64 @@
 
   z-index: 1;
 
-  overflow: auto;
+  overflow: hidden;
 
-  background: #0003;
+  background: #0009;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  .model-container {
+    background: var(--alt-bg-color);
+
+    border-radius: 20px;
+
+    width: 768px;
+    min-width: 300px;
+
+    height: 648px;
+    min-height: 150px;
+    
+    padding: 20px;
+
+    position: relative;
+
+    .close-button {
+      position: absolute;
+      top: 3%;
+      right: 3%;
+
+      background: none;
+      border: none;
+      outline: none;
+      
+      font-size: 36px;
+      font-weight: bold;
+
+      cursor: pointer;
+
+      color: var(--shadow-bg-color);
+
+      transition: color 0.5s;
+    }
+
+    .close-button:hover {
+      color: #ee5555;
+
+      transition: color 0.5s;
+    }
+  }
+}
+
+.modal.show {
+  display: flex;
+}
+
+
+@media screen and (max-width: 960px) {
+  .model-container {
+    width: 70vw;
+    height: 90vh;
+  }
 }

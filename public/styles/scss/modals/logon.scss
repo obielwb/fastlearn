@@ -1,15 +1,6 @@
 @import 'modal';
 
-#logon-modal {
-  margin: 20% auto;
-  width: 70%;
-
-  padding: 20px;
-
-  background: red;
-
-  border-radius: 10px;
-
+#logon-modal-container {
   #modal-content {
     display: flex;
     flex-direction: row;
