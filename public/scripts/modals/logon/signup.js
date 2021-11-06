@@ -4,6 +4,7 @@ var localLogon = document.querySelector('#logon-related-container');
 
 const signupEmail = document.querySelector('#signup #email');
 const signupPassword = document.querySelector('#signup #password');
+const signupPasswordConfirmation = document.querySelector('#signup #confirm-password');
 
 const signupInput = document.querySelector('#signup-input');
 
@@ -49,3 +50,10 @@ const upload = (url, options) => {
 
   return new Promise(callback);
 };
+
+signupPasswordConfirmation.addEventListener('input', () => {
+  const equals = signupPasswordConfirmation.value == signupPassword.value ? true : false;
+
+  if (equals)
+    signupPasswordConfirmation.parentElement.style.border = '3px solid #ee5555';
+});

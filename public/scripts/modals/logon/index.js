@@ -43,9 +43,9 @@ passwords.forEach(password => {
     const isValid = password.value.length > 5 ? true : false;
 
     if (isValid)
-    password.parentElement.style.border = '3px solid #00fb67';
+      password.parentElement.style.border = '3px solid #00fb67';
 
     else
-    password.parentElement.style.border = '3px solid #ee5555';
+      password.parentElement.style.border = '3px solid #ee5555';
   });
 });
