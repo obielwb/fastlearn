@@ -16,7 +16,7 @@ nav {
     align-items: center;
     justify-content: center;
 
-    a, #logo {
+    a, .logo {
       height: 100%;
     }
   }
@@ -188,46 +188,22 @@ nav {
         display: none;
       }
 
-      #login-button,
-      #login-sign-up-button {
+      #logon-button {
         background: transparent;
         transition: background 0.5s, color 0.5s, border 0.5s;
 
         color: var(--text-color);
 
         border: .4rem solid var(--accent-color);
-
-        margin-right: 1rem;
-        // display: none;
       }
 
-      #login-button {
-        // display: none;
-      }
-
-      #login-button:hover,
-      #login-sign-up-button:hover {
+      #logon-button:hover {
         background: var(--accent-color-hover);
         transition: background 0.5s, color 0.5s, border 0.5s;
 
         color: var(--alt-bg-color);
 
         border: .4rem solid var(--accent-color-hover);
-
-        cursor: pointer;
-      }
-
-      #sign-up-button {
-        // display: none;
-      }
-
-      #login-sign-up-button {
-        display: none;
-      }
-
-      button:hover {
-        background: var(--accent-color-hover);
-        transition: background 0.5s;
 
         cursor: pointer;
       }

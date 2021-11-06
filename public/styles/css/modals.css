@@ -22,17 +22,49 @@ body { font-family: 'Poppins', sans-serif; }
 
 .modal .model-container { background: var(--alt-bg-color); border-radius: 20px; width: 768px; min-width: 300px; height: 648px; min-height: 150px; padding: 20px; position: relative; }
 
-.modal .model-container .close-button { position: absolute; top: 3%; right: 3%; background: none; border: none; outline: none; font-size: 36px; font-weight: bold; cursor: pointer; color: var(--shadow-bg-color); -webkit-transition: color 0.5s; transition: color 0.5s; }
+.modal .model-container .close-button { position: absolute; top: 3%; right: 3%; z-index: 10; background: none; border: none; outline: none; font-size: 36px; font-weight: bold; cursor: pointer; color: var(--shadow-bg-color); -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 .modal .model-container .close-button:hover { color: #ee5555; -webkit-transition: color 0.5s; transition: color 0.5s; }
+
+.modal .model-container .modal-separator { width: 4px; height: 70%; border-radius: 5px; background: var(--shadow-bg-color); }
 
 .modal.show { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 @media screen and (max-width: 960px) { .model-container { width: 70vw; height: 90vh; } }
 
-#logon-modal-container #modal-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; height: 100%; background-color: green; }
+#logon-modal-container { position: relative; }
 
-#logon-modal-container #modal-content #about-container { width: 50%; height: 100%; background: blue; }
+#logon-modal-container #logon-modal-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; }
 
-#logon-modal-container #modal-content #logon-container { width: 50%; height: 100%; background: red; }
+#logon-modal-container #logon-modal-content #about-container { width: 50%; height: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#logon-modal-container #logon-modal-content #about-container #logon-modal-logo-container { width: 300px; height: 100px; }
+
+#logon-modal-container #logon-modal-content #about-container #logon-modal-logo-container img { width: 100%; height: 100%; }
+
+#logon-modal-container #logon-modal-content #logon-related-container { width: 50%; height: 70%; position: relative; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #logon-label { color: var(--text-color); font-size: 2rem; font-weight: 500; margin-left: 3.5rem; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form { width: 85%; height: 100%; position: absolute; bottom: 0; left: 0; margin-left: 3.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form #login { width: 100%; height: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form #login .text-input-container { height: 50px; width: 90%; color: var(--text-color); background: none; border: 3px solid var(--shadow-bg-color); border-radius: 7.5px; font-size: 18px; padding: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form #login .text-input-container .fa-envelope, #logon-modal-container #logon-modal-content #logon-related-container #login-form #login .text-input-container .fa-lock { height: 32px; width: 32px; color: var(--shadow-bg-color); position: relative; top: 15%; left: 10px; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form #login .text-input-container input[type="text"], #logon-modal-container #logon-modal-content #logon-related-container #login-form #login .text-input-container input[type="password"] { height: 50px; width: 100%; color: var(--text-color); background: none; border: none; outline: none; font-size: 18px; margin-left: 10px; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form #login .text-input-container ::-webkit-input-placeholder { color: var(--shadow-bg-color); font-size: 18px; font-weight: 100; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form #login .text-input-container :-ms-input-placeholder { color: var(--shadow-bg-color); font-size: 18px; font-weight: 100; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form #login .text-input-container ::-ms-input-placeholder { color: var(--shadow-bg-color); font-size: 18px; font-weight: 100; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form #login .text-input-container ::placeholder { color: var(--shadow-bg-color); font-size: 18px; font-weight: 100; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form #login .submit-button { height: 50px; width: 90%; border: none; outline: none; color: var(--text-color); background: var(--accent-color); border-radius: 7.5px; font-family: 'Poppins', sans-serif; font-size: 1.8rem; font-weight: bold; cursor: pointer; -webkit-transition: background 0.5s; transition: background 0.5s; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #login-form #login .submit-button:hover { background: var(--accent-color-hover); -webkit-transition: background 0.5s; transition: background 0.5s; }
 /*# sourceMappingURL=modals.css.map */
