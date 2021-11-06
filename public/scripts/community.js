@@ -12,4 +12,4 @@ button.addEventListener('click', () => {
         button.setAttribute('class', 'not-subscribed');
         button.innerHTML = 'Entrar';
     }
-})
+});

@@ -195,17 +195,15 @@ nav {
         color: var(--text-color);
 
         border: .4rem solid var(--accent-color);
+
+        cursor: pointer;
       }
 
       #logon-button:hover {
         background: var(--accent-color-hover);
         transition: background 0.5s, color 0.5s, border 0.5s;
 
-        color: var(--alt-bg-color);
-
         border: .4rem solid var(--accent-color-hover);
-
-        cursor: pointer;
       }
 
       .fa-sign-in-alt {

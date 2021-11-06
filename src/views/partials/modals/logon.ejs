@@ -1,5 +1,5 @@
 <div id="logon-modal" class="modal">
-  <div class="model-container" id="logon-modal-container">
+  <div class="modal-container" id="logon-modal-container">
     <button class="close-button" id="logon-close-button">
       &times;
     </button>
@@ -10,41 +10,65 @@
         </div>
       </div>
       <div class="modal-separator"></div>
-      <!-- TODO: 
-        - add login and sign up labels 
-        - add anchor: "ainda não tem uma conta? crie uma!"
-          - on click: 
-            about-container, 
-            login-form {
-              display: none;
-            }
-
-            signup-form {
-              display: flex;
-            }
-        - input on enter:
-          - make border color the accent one
-            - if a mistake happens during the login/sign up, make the border go red (#ee5555)
-            - if everything goes well during the login/sign up, make the border go green (no color defined yet)
-      -->
       <div id="logon-related-container">
         <p id="logon-label">LOGON</p>
-        <div id="login-form">
+        <form id="login-form" class="logon-form">
           <div id="login">
+            <p class="logon-instructions-label">Insira suas credenciais<br>para prosseguir.</p>
             <div class="text-input-container">
-              <i class="far fa-envelope"></i>
-              <input id="email" type="text" autocomplete="off" placeholder="Email" />
+              <i class="fas fa-user-circle"></i>
+              <input id="email" class="modal-input email-input" type="text" autocomplete="off" placeholder="Email" />
             </div>
             <div class="text-input-container">
               <i class="fas fa-lock"></i>
-              <input id="password" type="password" autocomplete="off" placeholder="Senha" />
+              <input id="password" class="modal-input password-input" type="password" autocomplete="off" placeholder="Senha" />
             </div>
-            <input id="login-input" class="submit-button" type="submit" value="LOGIN" />
+            <button id="login-input" class="submit-button">LOGIN</button>
+            <div class="alt-option">
+              <p>
+                Ainda não tem uma conta?
+                <br>
+                <button id="signup-option-button" class="alt-option-button">Cadastre-se!</button>
+              </p>     
+            </div>
           </div>
-        </div>
-        <div id="signup-form">
-
-        </div>
+        </form>
+        <form id="signup-form" class="logon-form">
+          <div id="signup">
+            <div class="centered">
+              <p class="logon-instructions-label">Insira suas credenciais<br>para prosseguir.</p>
+            </div>
+            <div class="centered">
+              <div class="text-input-container">
+                <i class="fas fa-user-circle"></i>
+                <input id="email" class="modal-input email-input" type="text" autocomplete="off" placeholder="Email" />
+              </div>
+            </div>
+            <div class="centered">
+              <div class="text-input-container">
+                <i class="fas fa-lock"></i>
+                <input id="password" class="modal-input password-input" type="password" autocomplete="off" placeholder="Senha" />
+              </div>
+            </div>
+            <div class="centered">
+              <button id="signup-input" class="submit-button">SIGN UP</button>
+            </div>
+            <div class="centered">
+              <button id="file-input">
+                <i class="fas fa-folder-plus"></i>
+              </button>
+            </div>
+            <div class="centered">
+              <div class="alt-option">
+                <p>
+                  Já tem uma conta?
+                  <br>
+                  <button id="login-option-button" class="alt-option-button">Faça login!</button>
+                </p>     
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
