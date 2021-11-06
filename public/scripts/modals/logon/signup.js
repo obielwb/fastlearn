@@ -23,7 +23,7 @@ changeToLogin.addEventListener('click', () => {
   localSignup.style.display = 'none';
 });
 
-const IMGUR_API_CLIENT_ID = '7142f74c7bfa887';
+const IMGUR_API_CLIENT_ID = '';
 localSignup.addEventListener('submit', () => {
   const data = new FormData();
   data.append('image', fileInput.files[0]);
@@ -35,8 +35,8 @@ localSignup.addEventListener('submit', () => {
     },
     body: data,
   })
-    .then(data => data.json())
-    .then(data => signupEmail.value = data);
+  //  .then(data => data.json())
+  //  .then(data => signupEmail.value = data);
 });
 
 const upload = (url, options) => {
