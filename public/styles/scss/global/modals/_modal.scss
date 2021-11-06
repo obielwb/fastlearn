@@ -70,6 +70,27 @@
     .modal-separator.hide {
       display: none;
     }
+
+    .text-input-container {
+      height: 50px;
+      width: 90%;
+
+      color: var(--text-color);
+      background: transparent;
+
+      border: 3px solid var(--shadow-bg-color);
+      border-radius: 7.5px;
+      font-size: 18px;
+      padding: 5px;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      transition: border 0.5s;
+
+    }
   }
 }
 

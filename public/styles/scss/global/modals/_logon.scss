@@ -85,36 +85,17 @@
         font-weight: 100;
       }
 
-      .text-input-container {
-        height: 50px;
-        width: 90%;
+      .fa-user-circle,
+      .fa-lock,
+      .fa-signature {
+        height: 32px;
+        width: 32px;
 
-        color: var(--text-color);
-        background: transparent;
+        color: var(--shadow-bg-color);
 
-        border: 3px solid var(--shadow-bg-color);
-        border-radius: 7.5px;
-        font-size: 18px;
-        padding: 5px;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-
-        transition: border 0.5s;
-
-        .fa-user-circle,
-        .fa-lock {
-          height: 32px;
-          width: 32px;
-
-          color: var(--shadow-bg-color);
-
-          position: relative;
-          top: 15%;
-          left: 10px;
-        }
+        position: relative;
+        top: 15%;
+        left: 10px;
       }
 
       .submit-button {
@@ -181,15 +162,21 @@
         height: 100%;
 
         display: none;
-        justify-content: center;
+        flex-direction: column;
         align-content: center;
+        justify-content: space-around;
+
+        .alt-option {
+          width: 100%;
+        }
 
         #signup {
           width: 100%;
+          height: 70%;
 
           display: grid;
           grid-template-columns: repeat(2, auto);
-          grid-template-rows: repeat(3, auto);
+          grid-template-rows: repeat(4, auto);
           grid-gap: 10px;
 
           .centered {
@@ -201,27 +188,61 @@
             justify-content: center;
           }
 
-          #file-input {
-            width: 64px;
-            height: 64px;
-            
-            outline: none;
-            
-            border-radius: 100%;
-            border: 5px dashed var(--shadow-bg-color);
-
+          #file-input-wrapper {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
 
-            background: none;
+            #file-input-container {
+              width: 64px;
+              height: 64px;
+              
+              outline: none;
+              
+              border-radius: 100%;
+              border: 5px dashed var(--shadow-bg-color);
 
-            cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
 
-            .fa-folder-plus {
+              position:relative;
+
+              overflow:hidden;
+
+              background: none;
+
+              cursor: pointer;
+
+              .fa-folder-plus {
+                color: var(--shadow-bg-color);
+
+                font-size: 24px;
+              }
+
+              input {
+                height: 100%;
+                width: 100%;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                opacity: 0;
+
+                cursor: pointer;
+              }
+            }
+
+            #avatar-label {
+              font-size: 1.7rem;
+              font-family: 'Poppins', sans-serif;
+              font-weight: bold;
+
               color: var(--shadow-bg-color);
 
-              font-size: 24px;
+              margin-top: 10px;
             }
           }
         }

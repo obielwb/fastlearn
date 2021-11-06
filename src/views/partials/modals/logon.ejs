@@ -33,10 +33,14 @@
             </div>
           </div>
         </form>
-        <form id="signup-form" class="logon-form">
+        <form id="signup-form" class="logon-form" method="post" enctype="multipart/form-data">
+          <!-- <p class="logon-instructions-label">Insira suas credenciais<br>para prosseguir.</p> -->
           <div id="signup">
             <div class="centered">
-              <p class="logon-instructions-label">Insira suas credenciais<br>para prosseguir.</p>
+              <div class="text-input-container">
+                <i class="fas fa-signature"></i>
+                <input id="username" class="modal-input username-input" type="text" autocomplete="off" placeholder="Username" />
+              </div>
             </div>
             <div class="centered">
               <div class="text-input-container">
@@ -51,22 +55,30 @@
               </div>
             </div>
             <div class="centered">
-              <button id="signup-input" class="submit-button">SIGN UP</button>
-            </div>
-            <div class="centered">
-              <button id="file-input">
-                <i class="fas fa-folder-plus"></i>
-              </button>
-            </div>
-            <div class="centered">
-              <div class="alt-option">
-                <p>
-                  Já tem uma conta?
-                  <br>
-                  <button id="login-option-button" class="alt-option-button">Faça login!</button>
-                </p>     
+              <div class="text-input-container">
+                <i class="fas fa-lock"></i>
+                <input id="confirm-password" class="modal-input password-input" type="password" autocomplete="off" placeholder="Confirme sua senha" />
               </div>
             </div>
+            <div class="centered">
+              <div id="file-input-wrapper">
+                <div id="file-input-container">
+                  <input id="file-input" type="file" accept="image/png, image/jpg, image/jpeg, image/bmp" />
+                  <i class="fas fa-folder-plus"></i>
+                </div>
+                <p id="avatar-label">Selecione um avatar!</p>
+              </div>
+            </div>
+            <div class="centered">
+              <button id="signup-input" class="submit-button">SIGN UP</button>
+            </div>
+          </div>
+          <div class="alt-option">
+            <p>
+              Já tem uma conta?
+              <br>
+              <button id="login-option-button" class="alt-option-button">Faça login!</button>
+            </p>     
           </div>
         </form>
       </div>
