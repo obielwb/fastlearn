@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +8,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/css/community.css">
-  
+  <link rel="stylesheet" href="/css/modals.css">
 
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/d67355562c.js" crossorigin="anonymous"></script>
@@ -25,45 +24,43 @@
 <body>
   <%- include('./partials/nav.ejs') %>
 
-
   <div id="container">
-    <div id="community-header">
-
-      <div id="community-image-container">
-        <img class="community-image" src="https://via.placeholder.com/1040x240"
-          alt="Community Image">
-      </div>
-
-      <div id="community-header-content">
-        <section id="top-part">
-          <img class="community-icon" src="https://via.placeholder.com/120" alt="Community Icon">
-          <h2 id="community-title">Community</h2>
-          <button id="subscribe-in-community" class="not-subscribed">Entrar</button>
-        </section>
-        
-        <section id="bottom-part">
-          <div id="description">
-            <p id="community-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consectetur adipisci illo!</p>
-          </div>
-          <div class="followers">
-            <p id="followers-number">000</p>
-            <p id="followers-label">followers</p>
-          </div>
-        </section>
-      </div>
-    
-    </div>
-    
-    <div id="community-content">
-      <div id="community-trail">
-        <p id="community-trail-title">
-          Trilha de 
-        </p>
-      </div>
+    <%- include('./partials/sidebar.ejs') %> 
+    <div id="comunity-container">
+      <div id="community-header">
   
-      <!-- <div id="post-container">
-        <%- include('./partials/post.ejs') %>
-      </div> -->
+        <div id="community-image-container">
+          <img class="community-image" src="https://via.placeholder.com/1040x240"
+            alt="Community Image">
+        </div>
+  
+        <div id="community-header-content">
+          <section id="top-part">
+            <img class="community-icon" src="https://via.placeholder.com/120" alt="Community Icon">
+            <h2 id="community-title">Community</h2>
+            <button id="subscribe-in-community" class="not-subscribed">Entrar</button>
+          </section>
+          
+          <section id="bottom-part">
+            <div id="description">
+              <p id="community-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consectetur adipisci illo!</p>
+            </div>
+            <div class="followers">
+              <p id="followers-number">000</p>
+              <p id="followers-label">followers</p>
+            </div>
+          </section>
+        </div>
+      
+      </div>
+      
+      <div id="community-content">
+        <div id="community-trail">
+          <p id="community-trail-title">
+            Trilha de <p id="title-for-trail"></p>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 

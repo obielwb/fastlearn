@@ -1,4 +1,5 @@
 const button = document.querySelector('#subscribe-in-community');
+const title = document.querySelector('#');
 
 button.addEventListener('click', () => {
     const className = button.classList[0];
@@ -13,3 +14,4 @@ button.addEventListener('click', () => {
         button.innerHTML = 'Entrar';
     }
 });
+
