@@ -349,14 +349,10 @@
 
 @media screen and (max-width: 960px) {
   #about-container {
-    display: none;
-    background: yellow;
-    /* TODO:
-      - display: none; does not work
-    */
+    display: none !important;
   }
   #signup {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(1, auto) !important;
+    grid-template-rows: repeat(7, auto) !important;
   }
 }

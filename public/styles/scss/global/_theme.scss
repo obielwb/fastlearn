@@ -2,7 +2,7 @@
     --text-color: #041629;
     --alt-text-color: #71787e;
     
-    --bg-color: #424c53;
+    --bg-color: #f2f7fb;
     --alt-bg-color: #ffffff;
     --special-bg-color: #f5f6f8;
     --shadow-bg-color: #bdc1c3;
@@ -17,12 +17,9 @@
     --vote-bg-color-hover: #adf7cd;
 
     --logon-label-color: #232323;
-
-    ///////////////////
-    --root-theme: 'solar';
 }
 
-:root.moon { // .moon 
+:root.moon {
     --text-color: #ffffff;
     --alt-text-color: #71787e;
     
@@ -41,12 +38,9 @@
     --vote-bg-color-hover: #47708d;
 
     --logon-label-color: #a0a0a0;
-
-    ///////////////////
-    --root-theme: 'moon';
 }
 
-:root { // .rocket
+:root.rocket {
     --text-color: #ffffff;
     --alt-text-color: #475058;
     
@@ -65,7 +59,4 @@
     --vote-bg-color-hover: #3d315a;
 
     --logon-label-color: #a0a0a0;
-
-    ///////////////////
-    --root-theme: 'rocket';
 }

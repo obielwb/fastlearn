@@ -1,0 +1,163 @@
+#theme-modal-container {
+  position: relative;
+
+  #theme-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    #themes-label {
+      color: var(--text-color);
+
+      font-size: 2rem;
+      font-weight: 500;
+
+      position: absolute;
+      top: 10%;
+      left: 5%;
+
+      z-index: 1;
+    }
+
+    #themes-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      width: 75%;
+      height: 75%;
+
+      .theme {
+        width: 100%;
+        height: 30%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        input[type="radio"] {
+          display: none;
+          appearance: none;
+        }
+
+        label {
+          position: relative;
+          
+          font-family: 'Poppins', sans-serif;
+          font-size: 2em;
+          font-weight: bold;
+
+          border-radius: 5px;
+
+          padding: 10px 50px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          cursor: pointer;
+
+          min-width: 250px;
+
+          transition: background 0.5s, color 0.5s;
+        }
+
+        label::before {
+          content: "";
+
+          width: 30px;
+          height: 30px;
+
+          border: 3px solid none;
+          border-radius: 100%;
+
+          margin-right: 20px;
+
+          transition: border 0.5s, width 0.5s, height 0.5s;
+        }
+
+        #solar-label {
+          color: #04d361;
+          border: 3px solid #04d361;
+        }
+
+        #solar-label::before {
+          border: 3px solid #04d361;
+        }
+        
+        #moon-label {
+          color: #0a98ff;
+          border: 3px solid #0a98ff;
+        }
+
+        #moon-label::before {
+          border: 3px solid #0a98ff;
+        }
+
+        #rocket-label {
+          color: #8257e5;
+          border: 3px solid #8257e5;
+        }
+
+        #rocket-label::before {
+          border: 3px solid #8257e5;
+        }
+
+        #solar-theme:checked + #solar-label {
+          background-color: #04d361;
+
+          color: #041629;
+        }
+
+        #moon-theme:checked + #moon-label {
+          background-color: #0a98ff;
+
+          color: #ffffff;
+        }
+
+        #rocket-theme:checked + #rocket-label {
+          background-color: #8257e5;
+
+          color: #ffffff;
+        }
+
+        #solar-theme:checked + #solar-label::before {
+          width: 25px;
+          height: 25px;
+
+          background-color: #04d361;
+
+          border: 7.5px solid #041629;
+        }
+
+        #moon-theme:checked + #moon-label::before {
+          width: 25px;
+          height: 25px;
+
+          background-color: #0a98ff;
+
+          border: 7.5px solid #ffffff;
+        }
+
+        #rocket-theme:checked + #rocket-label::before {
+          width: 25px;
+          height: 25px;
+
+          background-color: #8257e5;
+
+          border: 7.5px solid #ffffff;
+        }
+      }
+    }
+  }
+}
