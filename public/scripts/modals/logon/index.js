@@ -1,23 +1,23 @@
-const modal = document.querySelector('#logon-modal');
-const button = document.querySelector('#logon-button');
-const close = document.querySelector('#logon-close-button');
+const logonModal = document.querySelector('#logon-modal');
+const logonButton = document.querySelector('#logon-button');
+const logonClose = document.querySelector('#logon-close-button');
 
 const forms = document.querySelectorAll('.logon-form');
 
 const emails = document.querySelectorAll('.email-input');
 const passwords = document.querySelectorAll('.password-input');
 
-modal.addEventListener('click', (event) => {
+logonModal.addEventListener('click', (event) => {
   if (event.target.id == 'logon-modal')
-    modal.classList.remove('show');
+  logonModal.classList.remove('show');
 });
 
-button.addEventListener('click', () => {
-  modal.classList.add('show');
+logonButton.addEventListener('click', () => {
+  logonModal.classList.add('show');
 });
 
-close.addEventListener('click', () => {
-  modal.classList.remove('show');
+logonClose.addEventListener('click', () => {
+  logonModal.classList.remove('show');
 });
 
 forms.forEach(form => {

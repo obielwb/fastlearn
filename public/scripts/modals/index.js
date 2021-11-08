@@ -1,4 +1,4 @@
-const inputs = document.querySelectorAll('.modal-input');
+const inputs = document.querySelectorAll('.modal-text-input');
 
 inputs.forEach(input => {
   input.addEventListener('focus', () => {

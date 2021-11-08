@@ -123,4 +123,14 @@ body { font-family: 'Poppins', sans-serif; }
 
 @media screen and (max-width: 960px) { #about-container { display: none; background: yellow; /* TODO: - display: none; does not work */ }
   #signup { -ms-grid-columns: (auto)[1]; grid-template-columns: repeat(1, auto); -ms-grid-rows: (auto)[7]; grid-template-rows: repeat(7, auto); } }
+
+#theme-modal-container { position: relative; }
+
+#theme-modal-container #theme-modal-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; }
+
+#theme-modal-container #theme-modal-content #themes-label { color: var(--text-color); font-size: 2rem; font-weight: 500; position: absolute; top: 10%; left: 5%; z-index: 1; }
+
+#theme-modal-container #theme-modal-content #themes-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; width: 75%; height: 75%; }
+
+#theme-modal-container #theme-modal-content #themes-container .theme { width: 100%; height: 30%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 /*# sourceMappingURL=modals.css.map */
