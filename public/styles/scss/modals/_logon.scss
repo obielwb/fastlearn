@@ -351,8 +351,16 @@
   #about-container {
     display: none !important;
   }
-  #signup {
-    grid-template-columns: repeat(1, auto) !important;
-    grid-template-rows: repeat(7, auto) !important;
+  #logon-related-container {
+    width: 100% !important;
+
+    #signup {
+      grid-template-columns: repeat(1, auto) !important;
+      grid-template-rows: repeat(7, auto) !important;
+    }
+
+    &.signup {
+      width: 90% !important;
+    }
   }
 }

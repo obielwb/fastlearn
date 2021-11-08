@@ -100,8 +100,8 @@
 
 @media screen and (max-width: 960px) {
   .modal-container {
-    width: 70vw;
-    height: 90vh;
+    width: 95% !important;
+    height: 80% !important;
 
     .modal-separator {
       display: none;
