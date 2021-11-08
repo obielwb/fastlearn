@@ -5,7 +5,7 @@ var localLogon = document.querySelector('#logon-related-container');
 const loginEmail = document.querySelector('#login #email');
 const loginPassword = document.querySelector('#login #password');
 
-const changeToSignup = document.querySelector('#login #signup-option-button');
+const changeToSignup = document.querySelector('#signup-option-button');
 
 const elementsToHide = [
   document.querySelector('#about-container'),

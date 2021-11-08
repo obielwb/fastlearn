@@ -8,7 +8,7 @@ const signupPasswordConfirmation = document.querySelector('#signup #confirm-pass
 
 const signupInput = document.querySelector('#signup-input');
 
-const changeToLogin = document.querySelector('#signup #login-option-button');
+const changeToLogin = document.querySelector('#login-option-button');
 
 const fileInput = document.querySelector('#file-input');
 
