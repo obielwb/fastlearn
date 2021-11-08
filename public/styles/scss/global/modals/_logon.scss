@@ -188,11 +188,16 @@
             justify-content: center;
           }
 
-          #file-input-wrapper {
+          #avatar-related-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            position: relative;
+
+            width: 75%;
+            height: 100%;
 
             #file-input-container {
               width: 64px;
@@ -221,7 +226,7 @@
                 font-size: 24px;
               }
 
-              input {
+              #avatar-file-input {
                 height: 100%;
                 width: 100%;
 
@@ -235,7 +240,46 @@
               }
             }
 
-            #avatar-label {
+            #file-input-container.hide {
+              display: none;
+            }
+
+            #avatar-preview-container {
+              width: 50%;
+              height: 100%;
+
+              display: none;
+              align-items: center;
+              justify-content: center;
+
+              #avatar-preview {
+                width: 64px;
+                height: 64px;
+
+                border-radius: 100%;
+
+                display: none;
+              }
+
+              #dismiss-avatar-button {
+                bottom: 0;
+                right: 0;
+
+                display: none;
+              }
+            }
+
+            #avatar-preview-container.show {
+              display: flex;
+
+              #avatar-preview,
+              #dismiss-avatar-button {
+                display: block;
+              }
+            }
+
+            #avatar-label,
+            #avatar-file-name {
               font-size: 1.7rem;
               font-family: 'Poppins', sans-serif;
               font-weight: bold;
@@ -243,6 +287,18 @@
               color: var(--shadow-bg-color);
 
               margin-top: 10px;
+            }
+
+            #avatar-label.hide {
+              display: none;
+            }
+
+            #avatar-file-name {
+              display: none;
+            }
+
+            #avatar-file-name.show {
+              display: block;
             }
           }
         }
@@ -298,5 +354,9 @@
     /* TODO:
       - display: none; does not work
     */
+  }
+  #signup {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(7, auto);
   }
 }

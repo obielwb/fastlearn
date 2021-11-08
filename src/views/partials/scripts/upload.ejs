@@ -1,0 +1,29 @@
+<script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js" crossorigin="anonymous"></script>
+<script>
+  const FILESTACK_API_KEY = '';
+  const client = filestack.init(FILESTACK_API_KEY);
+  var file = null;
+
+  document.querySelectorAll('.file-input').forEach(input => {
+    input.addEventListener('change', (event) => {
+      file = event.target.files[0];
+
+      if (event.target.id == 'avatar-file-input')
+        loadAvatar(file);
+    });
+  });
+
+  const loadAvatar = (file) => {
+    document.querySelector('#file-input-container').classList.add('hide');
+    document.querySelector('#avatar-preview-container').classList.add('show');
+    document.querySelector('#avatar-label').classList.add('hide');
+    document.querySelector('#avatar-file-name').classList.add('show');
+    document.querySelector('#avatar-file-name').innerText = file.name;
+
+    var reader = new FileReader();
+    reader.onload = () => {
+      document.querySelector('#avatar-preview').src = reader.result;
+    }
+    reader.readAsDataURL(file);
+  }
+</script>

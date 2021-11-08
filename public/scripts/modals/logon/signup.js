@@ -2,15 +2,11 @@ var localLogin = document.querySelector('#login-form');
 var localSignup = document.querySelector('#signup-form');
 var localLogon = document.querySelector('#logon-related-container');
 
-const signupEmail = document.querySelector('#signup #email');
-const signupPassword = document.querySelector('#signup #password');
-const signupPasswordConfirmation = document.querySelector('#signup #confirm-password');
+const signupEmail = document.querySelector('#signup-email');
+const signupPassword = document.querySelector('#signup-password');
+const signupPasswordConfirmation = document.querySelector('#confirm-password');
 
 const signupInput = document.querySelector('#signup-input');
-
-const changeToLogin = document.querySelector('#login-option-button');
-
-const fileInput = document.querySelector('#file-input');
 
 const elementsToDisplay = [
   document.querySelector('#about-container'),
@@ -18,42 +14,35 @@ const elementsToDisplay = [
   document.querySelector('#login-form'),
 ];
 
-changeToLogin.addEventListener('click', () => {
+document.querySelector('#login-option-button').addEventListener('click', () => {
   elementsToDisplay.forEach(element => element.classList.remove('hide'));
   localLogon.classList.remove('signup');
   localSignup.style.display = 'none';
 });
 
-const IMGUR_API_CLIENT_ID = '';
-localSignup.addEventListener('submit', () => {
-  const data = new FormData();
-  data.append('image', fileInput.files[0]);
+const submit = () => {
+  let avatar = '';
+  
+  if (file == undefined)
+  avatar = 'https://www.seekpng.com/png/full/245-2454602_tanni-chand-default-user-image-png.png';
+  
+}
 
-  upload('https://api.imgur.com/3/image', {
-    method: 'POST',
-    headers: { 
-      'Authorization': `Client-ID ${IMGUR_API_CLIENT_ID}`
-    },
-    body: data,
-  })
-  //  .then(data => data.json())
-  //  .then(data => signupEmail.value = data);
-});
+localSignup.addEventListener('submit', submit);
 
-const upload = (url, options) => {
-  const callback = (resolve, reject) => {
-    fetch(url, options)
-      .then(response => response.json())
-      .then(resolve)
-      .catch(reject);
-  };
-
-  return new Promise(callback);
-};
-
-signupPasswordConfirmation.addEventListener('input', () => {
+signupPasswordConfirmation.addEventListener('propertychange change keyup input paste', () => {
   const equals = signupPasswordConfirmation.value == signupPassword.value ? true : false;
 
   if (equals)
+    signupPasswordConfirmation.parentElement.style.border = '3px solid #00fb67';
+
+  else
     signupPasswordConfirmation.parentElement.style.border = '3px solid #ee5555';
+});
+
+document.querySelector('#dismiss-avatar-button').addEventListener('click', () => {
+  document.querySelector('#file-input-container').classList.remove('hide');
+  document.querySelector('#avatar-preview-container').classList.remove('show');
+  document.querySelector('#avatar-label').classList.remove('hide');
+  document.querySelector('#avatar-file-name').classList.remove('show');
 });

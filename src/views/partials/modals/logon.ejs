@@ -17,11 +17,11 @@
             <p class="logon-instructions-label">Insira suas credenciais<br>para prosseguir.</p>
             <div class="text-input-container">
               <i class="fas fa-user-circle"></i>
-              <input id="email" class="modal-input email-input" type="text" autocomplete="off" placeholder="Email" />
+              <input id="login-email" class="modal-input email-input" type="text" autocomplete="off" placeholder="Email" />
             </div>
             <div class="text-input-container">
               <i class="fas fa-lock"></i>
-              <input id="password" class="modal-input password-input" type="password" autocomplete="off" placeholder="Senha" />
+              <input id="login-password" class="modal-input password-input" type="password" autocomplete="off" placeholder="Senha" />
             </div>
             <button id="login-input" class="submit-button">LOGIN</button>
             <div class="alt-option">
@@ -45,13 +45,13 @@
             <div class="centered">
               <div class="text-input-container">
                 <i class="fas fa-user-circle"></i>
-                <input id="email" class="modal-input email-input" type="text" autocomplete="off" placeholder="Email" />
+                <input id="signup-email" class="modal-input email-input" type="text" autocomplete="off" placeholder="Email" />
               </div>
             </div>
             <div class="centered">
               <div class="text-input-container">
                 <i class="fas fa-lock"></i>
-                <input id="password" class="modal-input password-input" type="password" autocomplete="off" placeholder="Senha" />
+                <input id="signup-password" class="modal-input password-input" type="password" autocomplete="off" placeholder="Senha" />
               </div>
             </div>
             <div class="centered">
@@ -61,12 +61,19 @@
               </div>
             </div>
             <div class="centered">
-              <div id="file-input-wrapper">
+              <div id="avatar-related-container">
                 <div id="file-input-container">
-                  <input id="file-input" type="file" accept="image/png, image/jpg, image/jpeg, image/bmp" />
+                  <input id="avatar-file-input" class="file-input" type="file" accept="image/png, image/jpg, image/jpeg, image/bmp" />
                   <i class="fas fa-folder-plus"></i>
                 </div>
+                <div id="avatar-preview-container">
+                  <img id="avatar-preview">
+                  <button class="close-button" id="dismiss-avatar-button">
+                    &times;
+                  </button>
+                </div>
                 <p id="avatar-label">Selecione um avatar!</p>
+                <span id="avatar-file-name"></span>
               </div>
             </div>
             <div class="centered">
@@ -78,10 +85,11 @@
               Já tem uma conta?
               <br>
               <button id="login-option-button" class="alt-option-button">Faça login!</button>
-            </p>     
+            </p>
           </div>
         </form>
       </div>
     </div>
   </div>
 </div>
+<%- include('../scripts/upload.ejs') %>

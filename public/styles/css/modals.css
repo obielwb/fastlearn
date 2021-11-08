@@ -85,15 +85,33 @@ body { font-family: 'Poppins', sans-serif; }
 
 #logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup .centered { width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #file-input-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; width: 75%; height: 100%; }
 
-#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #file-input-wrapper #file-input-container { width: 64px; height: 64px; outline: none; border-radius: 100%; border: 5px dashed var(--shadow-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; overflow: hidden; background: none; cursor: pointer; }
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #file-input-container { width: 64px; height: 64px; outline: none; border-radius: 100%; border: 5px dashed var(--shadow-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; overflow: hidden; background: none; cursor: pointer; }
 
-#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #file-input-wrapper #file-input-container .fa-folder-plus { color: var(--shadow-bg-color); font-size: 24px; }
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #file-input-container .fa-folder-plus { color: var(--shadow-bg-color); font-size: 24px; }
 
-#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #file-input-wrapper #file-input-container input { height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: 0; cursor: pointer; }
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #file-input-container #avatar-file-input { height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: 0; cursor: pointer; }
 
-#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #file-input-wrapper #avatar-label { font-size: 1.7rem; font-family: 'Poppins', sans-serif; font-weight: bold; color: var(--shadow-bg-color); margin-top: 10px; }
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #file-input-container.hide { display: none; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-preview-container { width: 50%; height: 100%; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-preview-container #avatar-preview { width: 64px; height: 64px; border-radius: 100%; display: none; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-preview-container #dismiss-avatar-button { bottom: 0; right: 0; display: none; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-preview-container.show { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-preview-container.show #avatar-preview, #logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-preview-container.show #dismiss-avatar-button { display: block; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-label, #logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-file-name { font-size: 1.7rem; font-family: 'Poppins', sans-serif; font-weight: bold; color: var(--shadow-bg-color); margin-top: 10px; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-label.hide { display: none; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-file-name { display: none; }
+
+#logon-modal-container #logon-modal-content #logon-related-container #signup-form #signup #avatar-related-container #avatar-file-name.show { display: block; }
 
 #logon-modal-container #logon-modal-content #logon-related-container .alt-option { width: 90%; height: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 10px; }
 
@@ -103,5 +121,6 @@ body { font-family: 'Poppins', sans-serif; }
 
 #logon-modal-container #logon-modal-content #logon-related-container.signup { width: 90%; padding: 0; }
 
-@media screen and (max-width: 960px) { #about-container { display: none; background: yellow; /* TODO: - display: none; does not work */ } }
+@media screen and (max-width: 960px) { #about-container { display: none; background: yellow; /* TODO: - display: none; does not work */ }
+  #signup { -ms-grid-columns: (auto)[1]; grid-template-columns: repeat(1, auto); -ms-grid-rows: (auto)[7]; grid-template-rows: repeat(7, auto); } }
 /*# sourceMappingURL=modals.css.map */

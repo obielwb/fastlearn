@@ -42,10 +42,12 @@ passwords.forEach(password => {
   password.addEventListener('focusout', () => {
     const isValid = password.value.length > 5 ? true : false;
 
-    if (isValid)
+    if (password.id != 'confirm-password') {
+      if (isValid)
       password.parentElement.style.border = '3px solid #00fb67';
 
-    else
-      password.parentElement.style.border = '3px solid #ee5555';
+      else
+        password.parentElement.style.border = '3px solid #ee5555';
+    }
   });
 });
