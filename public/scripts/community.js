@@ -14,4 +14,3 @@ button.addEventListener('click', () => {
         button.innerHTML = 'Entrar';
     }
 });
-
