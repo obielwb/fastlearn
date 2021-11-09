@@ -180,47 +180,35 @@ body { font-family: 'Poppins', sans-serif; }
 
 @media screen and (max-width: 960px) { #themes-label { top: 3.5% !important; } }
 
-#post-modal-container { position: relative; }
+#create-post-modal-container { position: relative; }
 
-#post-modal-container #post-modal-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; }
+#create-post-modal-container #create-post-modal-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; }
 
-#post-modal-container #post-modal-content #post-label { color: var(--text-color); font-size: 2rem; font-weight: 500; position: absolute; top: 10%; left: 5%; z-index: 1; }
+#create-post-modal-container #create-post-modal-content #create-post-label { color: var(--text-color); font-size: 2rem; font-weight: 500; position: absolute; top: 10%; left: 5%; z-index: 1; }
 
-#post-modal-container #post-modal-content #post-container #signup-form { width: 100%; height: 100%; display: none; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-line-pack: center; align-content: center; -ms-flex-pack: distribute; justify-content: space-around; }
+#create-post-modal-container #create-post-modal-content #create-post-form { width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-#post-modal-container #post-modal-content #post-container #signup-form .alt-option { width: 100%; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post { width: 80%; height: 70%; display: -ms-grid; display: grid; -ms-grid-columns: (auto)[2]; grid-template-columns: repeat(2, auto); -ms-grid-rows: (auto)[4]; grid-template-rows: repeat(4, auto); grid-gap: 10px; }
 
-#post-modal-container #post-modal-content #post-container #signup-form #signup { width: 100%; height: 70%; display: -ms-grid; display: grid; -ms-grid-columns: (auto)[2]; grid-template-columns: repeat(2, auto); -ms-grid-rows: (auto)[4]; grid-template-rows: repeat(4, auto); grid-gap: 10px; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post .centered { width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-#post-modal-container #post-modal-content #post-container #signup-form #signup .centered { width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post #create-post-community { width: 350px; display: -webkit-box; display: -ms-flexbox; display: flex; font-family: 'Poppins', sans-serif; font-size: 1.7rem; font-weight: 500; }
 
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; width: 75%; height: 100%; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post #create-post-community #create-post-select-community { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; width: 100%; height: 100%; color: var(--shadow-bg-color); background: transparent; border: 3px solid var(--shadow-bg-color); border-radius: 7.5px; font-size: 18px; padding: 5px; }
 
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #file-input-container { width: 64px; height: 64px; outline: none; border-radius: 100%; border: 5px dashed var(--shadow-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; overflow: hidden; background: none; cursor: pointer; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post #create-post-community #create-post-select-community #selected-community { border: none; outline: none; background: none; cursor: pointer; min-width: 300px; font-family: 'Poppins', sans-serif; font-size: 1.7rem; font-weight: 500; color: var(--text-color); }
 
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #file-input-container .fa-folder-plus { color: var(--shadow-bg-color); font-size: 24px; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post #create-post-community #create-post-select-community #selected-community::-webkit-input-placeholder { font-family: 'Poppins', sans-serif; font-size: 1.7rem; font-weight: 500; color: var(--shadow-bg-color); }
 
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #file-input-container #avatar-file-input { height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: 0; cursor: pointer; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post #create-post-community #create-post-select-community #selected-community:-ms-input-placeholder { font-family: 'Poppins', sans-serif; font-size: 1.7rem; font-weight: 500; color: var(--shadow-bg-color); }
 
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #file-input-container.hide { display: none; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post #create-post-community #create-post-select-community #selected-community::-ms-input-placeholder { font-family: 'Poppins', sans-serif; font-size: 1.7rem; font-weight: 500; color: var(--shadow-bg-color); }
 
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-preview-container { width: 50%; height: 100%; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post #create-post-community #create-post-select-community #selected-community::placeholder { font-family: 'Poppins', sans-serif; font-size: 1.7rem; font-weight: 500; color: var(--shadow-bg-color); }
 
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-preview-container #avatar-preview { width: 64px; height: 64px; border-radius: 100%; display: none; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post #create-post-community #create-post-communities-container { width: 100%; background: var(--shadow-bg-color); color: var(--text-color); border-radius: 10px; -webkit-transition: all 0.5s; transition: all 0.5s; overflow: hidden; -webkit-box-ordinal-group: 1; -ms-flex-order: 0; order: 0; }
 
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-preview-container #dismiss-avatar-button { bottom: 0; right: 0; display: none; }
-
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-preview-container.show { display: -webkit-box; display: -ms-flexbox; display: flex; }
-
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-preview-container.show #avatar-preview, #post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-preview-container.show #dismiss-avatar-button { display: block; }
-
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-label, #post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-file-name { font-size: 1.7rem; font-family: 'Poppins', sans-serif; font-weight: bold; color: var(--shadow-bg-color); margin-top: 10px; }
-
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-label.hide { display: none; }
-
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-file-name { display: none; }
-
-#post-modal-container #post-modal-content #post-container #signup-form #signup #avatar-related-container #avatar-file-name.show { display: block; }
+#create-post-modal-container #create-post-modal-content #create-post-form #create-post #create-post-community #create-post-select-community, #create-post-modal-container #create-post-modal-content #create-post-form #create-post #create-post-community #create-post-community-input { padding: 15px 30px; cursor: pointer; }
 
 @media screen and (max-width: 960px) { #post { -ms-grid-columns: (auto)[1] !important; grid-template-columns: repeat(1, auto) !important; -ms-grid-rows: (auto)[7] !important; grid-template-rows: repeat(7, auto) !important; } }
 /*# sourceMappingURL=modals.css.map */

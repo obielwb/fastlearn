@@ -8,18 +8,23 @@
       <form id="create-post-form" method="post" enctype="multipart/form-data">
         <div id="create-post">
           <div class="centered">
-            <div id="select-input-container">
-              <i class="fas fa-bezier-curve"></i>
-              <select id="create-post-community" name="community">
+            <div id="create-post-community">
+              <div id="create-post-select-community">
+                <input type="text" id="selected-community" name="selected-community" placeholder="Selecione uma comunidade" readonly>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div id="create-post-communities-container">
                 <% if (communities != null) { %>
                   <% communities.forEach((community) => { %>
-                    <option class="create-post-community-option" value="<%- community.id %>"><%- community.name %></option>
+                    <div class="create-post-community">
+                      <input type="radio" class="create-post-community-input" value="<%- community.id %>" name="community">
+                      <label for="community"><%- community.name %></label>
+                    </div>
                   <% }); %>
                 <% } else { %>
-                  <option class="create-post-community-option" value="null">No communities could be found.</option>
                 <% } %>
-              </select>
-            </div>
+              </div>
+            </div> 
           </div>
         </div>
       </form>
