@@ -179,10 +179,22 @@ nav {
 
         height: 75%;
         width: 200px;
+
+        cursor: pointer;
       }
 
       #create-post-button {
-        display: none;
+        // display: none;
+      }
+
+      #create-post-button:hover {
+        background: var(--accent-color-hover);
+
+        transition: background 0.5s;
+      }
+
+      #create-post-button.logged {
+        display: block;
       }
 
       #logon-button {
@@ -201,6 +213,11 @@ nav {
         transition: background 0.5s, color 0.5s, border 0.5s;
 
         border: .4rem solid var(--accent-color-hover);
+      }
+
+      // #logon-button.logged
+      #logon-button {
+        display: none;
       }
 
       .fa-sign-in-alt {
