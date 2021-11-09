@@ -8,7 +8,7 @@
     input.addEventListener('change', (event) => {
       file = event.target.files[0];
 
-      if (event.target.id == 'avatar-file-input')
+      if (event.target.id == 'avatar-file-input' && file != undefined)
         loadAvatar(file);
     });
   });
