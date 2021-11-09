@@ -8,6 +8,7 @@ const axios = require('axios');
 router.get('', async (req, res) => {
   let user = {};
   let posts = [];
+  let communities = [];
 
   try {
     const { data, status } = await axios.get('https://api.newscatcherapi.com/v2/search', {
@@ -34,9 +35,15 @@ router.get('', async (req, res) => {
           image: article.media,
           title: article.title,
           votes: parseInt(article.rank),
-        }
+        };
+
+        const community = {
+          id: article._id,
+          name: article.topic,
+        };
 
         posts.push(post);
+        communities.push(community);
       });
     }
 
@@ -53,7 +60,7 @@ router.get('', async (req, res) => {
   //     posts = response;
   // } catch (error) {}
 
-  res.render('home', { user, posts });
+  res.render('home', { user, posts, communities });
 });
 
 module.exports = router;
