@@ -15,8 +15,8 @@ module.exports = {
         allowNull: false
       },
       description: Sequelize.STRING,
-      icon: Sequelize.STRING,
-      banner: Sequelize.STRING,
+      icon: Sequelize.BLOB,
+      banner: Sequelize.BLOB,
       created_at: {
         type: Sequelize.DATE,
         allowNull: false

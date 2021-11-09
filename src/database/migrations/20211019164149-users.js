@@ -21,7 +21,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      avatar: Sequelize.STRING,
+      avatar: Sequelize.BLOB,
       created_at: {
         type: Sequelize.DATE,
         allowNull: false
