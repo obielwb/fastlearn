@@ -31,8 +31,7 @@
             align-items: center;
             justify-content: center;
 
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-radius: 1rem;
 
             #community-image-container {
                 width: 100%;
@@ -56,7 +55,7 @@
 
                 color: var(--text-color);
 
-                margin-top: 10px;
+                margin-top: 1rem;
 
                 section#top-part {
                     width: 90%;
@@ -189,9 +188,58 @@
             background-color: var(--alt-bg-color);
 
             display: flex;
+            flex-direction: column;
+            align-items: center;
+
 
             width: 1040px;
             height: 1040px;
+
+            margin-top: 2.5rem;
+
+            border-radius: 1rem;
+
+            #community-trail {
+                z-index: 1;
+                background-color: var(--bg-color);
+
+                width: 90%;
+
+                color: var(--text-color);
+
+                margin: 3rem 0;
+
+                border-radius: 1rem;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                #community-trail-title {
+                    font-weight: 600;
+                    font-size: 2.4rem;
+
+                    padding: 3rem;
+                }
+
+                #shapes {
+                    display: flex;
+
+                    margin-right: 12rem;
+
+                    .geometric-form {
+                        width: 3rem;
+                        height: 100%;
+                    
+                        background-color: var(--accent-color);
+                    
+                        transform: rotate(45deg);
+                        background: linear-gradient(45deg, var(--accent-color) 0%, var(--accent-color) 21%, var(--bg-color) 100%);
+                        margin-left: 4rem;
+                    }
+                }
+            }
+
         }
     }
 }
