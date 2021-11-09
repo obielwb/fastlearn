@@ -1,6 +1,5 @@
 // TODO: get all the relations working properly
-// TODO: fix uuid errors
-// TODO: make post id uuid
+// TODO: make the API work at all (lol)
 require('dotenv').config();
 require('./database');
 
