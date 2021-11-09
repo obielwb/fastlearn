@@ -235,7 +235,7 @@ nav #mobile-menu-container #mobile-menu .mobile-menu-line:nth-child(2) { opacity
 
 #container #community-container #community-content #community-trail #shapes { display: -webkit-box; display: -ms-flexbox; display: flex; margin-right: 12rem; }
 
-#container #community-container #community-content #community-trail #shapes .geometric-form { width: 3rem; height: 100%; background-color: var(--accent-color); -webkit-transform: rotate(45deg); transform: rotate(45deg); background: linear-gradient(45deg, var(--accent-color) 0%, var(--accent-color) 21%, var(--bg-color) 100%); margin-left: 4rem; }
+#container #community-container #community-content #community-trail #shapes .geometric-form { width: 3rem; height: 100%; background-color: var(--accent-color); -webkit-transform: rotate(45deg); transform: rotate(45deg); background: linear-gradient(45deg, var(--accent-color) 0%, var(--accent-color) 21%, var(--bg-color) 100%); margin-left: 4rem; border-radius: 10px; }
 
 body { background: var(--bg-color); }
 
