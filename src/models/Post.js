@@ -3,6 +3,10 @@ const { Model, DataTypes } = require('sequelize');
 class Post extends Model {
   static init(sequelize) {
     super.init({
+      id: {
+        type: DataTypes.STRING, 
+        primaryKey: true
+      },
       title: DataTypes.STRING,
       content: DataTypes.STRING,
       image: DataTypes.STRING,
