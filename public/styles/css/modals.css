@@ -12,15 +12,15 @@ html { height: 100%; font-size: 62.5%; }
 
 body { font-family: 'Poppins', sans-serif; }
 
-:root.solar { --text-color: #041629; --alt-text-color: #71787e; --bg-color: #dae7f1; --alt-bg-color: #ffffff; --special-bg-color: #f5f6f8; --shadow-bg-color: #bdc1c3; --accent-color: #04d361; --accent-color-hover: #50df90; --contrast-color: #0a98ff; --contrast-color-hover: #7ab8ff; --vote-bg-color: #d6ffe8; --vote-bg-color-hover: #adf7cd; --logon-label-color: #232323; }
+:root.solar { --text-color: #041629; --alt-text-color: #71787e; --bg-color: #dae7f1; --alt-bg-color: #ffffff; --special-bg-color: #f5f6f8; --shadow-bg-color: #bdc1c3; --accent-color: #04d361; --accent-color-hover: #50df90; --contrast-color: #0a98ff; --contrast-color-hover: #7ab8ff; --vote-bg-color: #d6ffe8; --vote-bg-color-hover: #adf7cd; --modal-label-color: #232323; }
 
-:root.moon { --text-color: #ffffff; --alt-text-color: #71787e; --bg-color: #24292e; --alt-bg-color: #2f363d; --special-bg-color: #363d45; --shadow-bg-color: #3e4747; --accent-color: #0a98ff; --accent-color-hover: #7ab8ff; --contrast-color: #04d361; --contrast-color-hover: #50df90; --vote-bg-color: #294254; --vote-bg-color-hover: #47708d; --logon-label-color: #a0a0a0; }
+:root.moon { --text-color: #ffffff; --alt-text-color: #71787e; --bg-color: #24292e; --alt-bg-color: #2f363d; --special-bg-color: #363d45; --shadow-bg-color: #3e4747; --accent-color: #0a98ff; --accent-color-hover: #7ab8ff; --contrast-color: #04d361; --contrast-color-hover: #50df90; --vote-bg-color: #294254; --vote-bg-color-hover: #47708d; --modal-label-color: #a0a0a0; }
 
-:root.rocket { --text-color: #ffffff; --alt-text-color: #475058; --bg-color: #0d0d0f; --alt-bg-color: #121214; --special-bg-color: #1b1b1f; --shadow-bg-color: #2a2a2a; --accent-color: #8257e5; --accent-color-hover: #a47dff; --contrast-color: #04d361; --contrast-color-hover: #50df90; --vote-bg-color: #2a2438; --vote-bg-color-hover: #3d315a; --logon-label-color: #a0a0a0; }
+:root.rocket { --text-color: #ffffff; --alt-text-color: #475058; --bg-color: #0d0d0f; --alt-bg-color: #121214; --special-bg-color: #1b1b1f; --shadow-bg-color: #2a2a2a; --accent-color: #8257e5; --accent-color-hover: #a47dff; --contrast-color: #04d361; --contrast-color-hover: #50df90; --vote-bg-color: #2a2438; --vote-bg-color-hover: #3d315a; --modal-label-color: #a0a0a0; }
 
 .modal { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 1; overflow: hidden; background: #0009; display: none; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.modal .modal-container { background: var(--alt-bg-color); border-radius: 20px; width: 768px; min-width: 300px; height: 648px; min-height: 150px; padding: 20px; position: relative; }
+.modal .modal-container { background: var(--alt-bg-color); border-radius: 20px; width: 768px; min-width: 300px; height: 648px; min-height: 150px; padding: 20px; position: relative; -webkit-transition: background 0.5s, color 0.5s; transition: background 0.5s, color 0.5s; }
 
 .modal .modal-container .close-button { position: absolute; top: 3%; right: 3%; z-index: 10; background: none; border: none; outline: none; font-size: 36px; font-weight: bold; cursor: pointer; color: var(--shadow-bg-color); -webkit-transition: color 0.5s; transition: color 0.5s; }
 
@@ -53,7 +53,7 @@ body { font-family: 'Poppins', sans-serif; }
 
 #logon-modal-container #logon-modal-content #logon-related-container #logon-label { color: var(--text-color); font-size: 2rem; font-weight: 500; }
 
-#logon-modal-container #logon-modal-content #logon-related-container .logon-instructions-label { color: var(--logon-label-color); font-size: 1.75rem; font-weight: bold; letter-spacing: 0.5px; }
+#logon-modal-container #logon-modal-content #logon-related-container .logon-instructions-label { color: var(--modal-label-color); font-size: 1.75rem; font-weight: bold; letter-spacing: 0.5px; }
 
 #logon-modal-container #logon-modal-content #logon-related-container input[type="text"], #logon-modal-container #logon-modal-content #logon-related-container input[type="password"] { height: 50px; width: 100%; color: var(--text-color); background: none; border: none; outline: none; font-size: 18px; margin-left: 10px; }
 
@@ -165,4 +165,24 @@ body { font-family: 'Poppins', sans-serif; }
 #theme-modal-container #theme-modal-content #themes-container .theme #moon-theme:checked + #moon-label::before { width: 25px; height: 25px; background-color: #0a98ff; border: 7.5px solid #ffffff; }
 
 #theme-modal-container #theme-modal-content #themes-container .theme #rocket-theme:checked + #rocket-label::before { width: 25px; height: 25px; background-color: #8257e5; border: 7.5px solid #ffffff; }
+
+#theme-modal-container #theme-modal-content #themes-instructions { color: var(--modal-label-color); font-size: 2rem; font-weight: bold; width: 75%; text-align: center; }
+
+#theme-modal-container #theme-modal-content #themes-instructions #red { color: #fe0100; }
+
+#theme-modal-container #theme-modal-content #themes-instructions #orange { color: #dfa300; }
+
+#theme-modal-container #theme-modal-content #themes-instructions #green { color: #01a800; }
+
+#theme-modal-container #theme-modal-content #themes-instructions #blue { color: #1a6dda; }
+
+#theme-modal-container #theme-modal-content #themes-instructions #fastlearn-label { height: 100%; all: unset; background: var(--accent-color); color: var(--text-color); -webkit-transition: background 0.5s, color 0.5s; transition: background 0.5s, color 0.5s; }
+
+@media screen and (max-width: 960px) { #themes-label { top: 3.5% !important; } }
+
+#post-modal-container { position: relative; }
+
+#post-modal-container #post-modal-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; }
+
+#post-modal-container #post-modal-content #post-label { color: var(--text-color); font-size: 2rem; font-weight: 500; position: absolute; top: 10%; left: 5%; z-index: 1; }
 /*# sourceMappingURL=modals.css.map */

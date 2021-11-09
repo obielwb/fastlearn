@@ -17,14 +17,15 @@
   }
 
   #feed-container {
-    background-color: var(--alt-bg-color);
     width: 70%;
     height: 100%;
-
+    
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-
+    
     font-family: 'Poppins', sans-serif;
+
+    background-color: var(--alt-bg-color);
 
     position: relative;
 

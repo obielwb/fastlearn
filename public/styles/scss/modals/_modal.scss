@@ -31,6 +31,8 @@
 
     position: relative;
 
+    transition: background 0.5s, color 0.5s;
+
     .close-button {
       position: absolute;
       top: 3%;
