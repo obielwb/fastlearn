@@ -20,7 +20,7 @@ body { font-family: 'Poppins', sans-serif; }
 
 .modal { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 1; overflow: hidden; background: #0009; display: none; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.modal .modal-container { background: var(--alt-bg-color); border-radius: 20px; width: 768px; min-width: 300px; height: 648px; min-height: 150px; padding: 20px; position: relative; -webkit-transition: background 0.5s, color 0.5s; transition: background 0.5s, color 0.5s; }
+.modal .modal-container { background: var(--alt-bg-color); border-radius: 2.0rem; width: 76.8rem; min-width: 30.0rem; height: 64.8rem; min-height: 15.0rem; padding: 2.0rem; position: relative; -webkit-transition: background 0.5s, color 0.5s; transition: background 0.5s, color 0.5s; }
 
 .modal .modal-container .close-button { position: absolute; top: 3%; right: 3%; z-index: 10; background: none; border: none; outline: none; font-size: 36px; font-weight: bold; cursor: pointer; color: var(--shadow-bg-color); -webkit-transition: color 0.5s; transition: color 0.5s; }
 
