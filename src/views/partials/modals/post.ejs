@@ -1,16 +1,24 @@
-<div id="post-modal" class="modal">
-  <div class="modal-container" id="post-modal-container">
-    <button class="close-button" id="post-close-button">
+<div id="create-post-modal" class="modal">
+  <div class="modal-container" id="create-post-modal-container">
+    <button class="close-button" id="create-post-close-button">
       &times;
     </button>
-    <div id="post-modal-content">
-      <p id="post-label">Post</p>
-      <form id="post-form" class="logon-form" method="post" enctype="multipart/form-data">
-        <div id="post">
+    <div id="create-post-modal-content">
+      <p id="create-post-label">Criar post</p>
+      <form id="create-post-form" method="post" enctype="multipart/form-data">
+        <div id="create-post">
           <div class="centered">
-            <div class="text-input-container">
-              <i class="fas fa-signature"></i>
-              <input id="username" class="modal-text-input username-input" type="text" autocomplete="off" placeholder="Username" />
+            <div id="select-input-container">
+              <i class="fas fa-bezier-curve"></i>
+              <select id="create-post-community" name="community">
+                <% if (communities != null) { %>
+                  <% communities.forEach((community) => { %>
+                    <option class="create-post-community-option" value="<%- community.id %>"><%- community.name %></option>
+                  <% }); %>
+                <% } else { %>
+                  <option class="create-post-community-option" value="null">No communities could be found.</option>
+                <% } %>
+              </select>
             </div>
           </div>
         </div>
