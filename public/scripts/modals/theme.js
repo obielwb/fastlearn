@@ -1,4 +1,4 @@
-const themeModal = document.querySelector('#theme-modal')
+const themeModal = document.querySelector('#theme-modal');
 const themeButton = document.querySelector('#theme-button');
 const themeClose = document.querySelector('#theme-close-button');
 
