@@ -13,7 +13,6 @@ app.use('/scripts', express.static('./public/scripts'));
 app.use('/css', express.static('./public/styles/css'));
 
 const routes = require('./routes');
-
 app.use(routes);
 
 module.exports = app;
