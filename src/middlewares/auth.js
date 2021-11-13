@@ -1,15 +1,17 @@
 const { verify } = require('jsonwebtoken');
 
-module.exports = (req, res, next) => {
-  const token = req.headers.authorization;
+const config = require('../config/auth');
 
-  if (!token)
-    return res.status(401).json({ message: 'Missing auth token' });
+module.exports = (req, res, next) => {
+  const authHeader  = req.headers.authorization;
+
+  if (!authHeader)
+    return res.status(401).json({ error: 'Token not provided' });
 
   const [, token] = token.split(' ');
 
   try {
-    const decoded = verify(token, process.env.TOKEN);
+    const decoded = verify(token, config.secret);
 
     req.id = decoded['id'];
 
