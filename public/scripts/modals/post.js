@@ -1,9 +1,9 @@
-const postModal = document.querySelector('#post-modal')
+const postModal = document.querySelector('#create-post-modal')
 const postButton = document.querySelector('#create-post-button');
-const postClose = document.querySelector('#post-close-button');
+const postClose = document.querySelector('#create-post-close-button');
 
 postModal.addEventListener('click', (event) => {
-  if (event.target.id == 'post-modal')
+  if (event.target.id == 'create-post-modal')
     postModal.classList.remove('show');
 });
 

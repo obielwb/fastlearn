@@ -19,8 +19,12 @@ const changeLogo = (theme) => {
 };
 
 const verifyTheme = () => {
-  if (localStorage.getItem('theme') == null)
-    localStorage.setItem('theme', 'solar');
+  if (localStorage.getItem('theme') == null ||
+      localStorage.getItem('theme') != 'solar' &&
+      localStorage.getItem('theme') != 'moon' &&
+      localStorage.getItem('theme') != 'rocket'
+     )
+        localStorage.setItem('theme', 'solar');
 
   const currentTheme = localStorage.getItem('theme');
   reference[currentTheme].checked = true;

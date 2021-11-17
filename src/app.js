@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const express = require('express');
 const app = express();
 
@@ -12,7 +13,6 @@ app.use('/scripts', express.static('./public/scripts'));
 app.use('/css', express.static('./public/styles/css'));
 
 const routes = require('./routes');
-
 app.use(routes);
 
 module.exports = app;
