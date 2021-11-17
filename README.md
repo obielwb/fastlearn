@@ -19,7 +19,7 @@ FastLearn. Revolucionando a maneira de aprender. Veja também a [API](https://gi
 ## 🙋 Como usar
 ```
 # Clone esse repositório
-$ git clone https://github.com/project-fastlearn/fastlearn-frontend.git
+$ git clone https://github.com/obielwb/fastlearn.git
 
 # Entre na pasta do projeto
 $ cd fastlearn
