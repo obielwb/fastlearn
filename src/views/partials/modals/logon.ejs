@@ -1,12 +1,10 @@
 <div id="logon-modal" class="modal">
   <div class="modal-container" id="logon-modal-container">
-    <button class="close-button" id="logon-close-button">
-      &times;
-    </button>
+    <button class="close-button" id="logon-close-button">&times;</button>
     <div id="logon-modal-content">
       <div id="about-container">
         <div id="logon-modal-logo-container">
-          <img class="logo">
+          <img class="logo" />
         </div>
       </div>
       <div class="modal-separator"></div>
@@ -14,59 +12,109 @@
         <p id="logon-label">Logon</p>
         <form id="login-form" class="logon-form">
           <div id="login">
-            <p class="logon-instructions-label">Insira suas credenciais<br>para prosseguir.</p>
+            <p class="logon-instructions-label">
+              Insira suas credenciais<br />para prosseguir.
+            </p>
             <div class="text-input-container">
               <i class="fas fa-user-circle"></i>
-              <input id="login-email" class="modal-text-input email-input" type="text" autocomplete="off" placeholder="Email" />
+              <input
+                id="login-email"
+                class="modal-text-input email-input"
+                type="text"
+                autocomplete="off"
+                placeholder="Email"
+              />
             </div>
             <div class="text-input-container">
               <i class="fas fa-lock"></i>
-              <input id="login-password" class="modal-text-input password-input" type="password" autocomplete="off" placeholder="Senha" />
+              <input
+                id="login-password"
+                class="modal-text-input password-input"
+                type="password"
+                autocomplete="off"
+                placeholder="Senha"
+              />
             </div>
             <button id="login-input" class="submit-button">LOGIN</button>
             <div class="alt-option">
               <p>
                 Ainda não tem uma conta?
-                <br>
-                <button id="signup-option-button" class="alt-option-button">Cadastre-se!</button>
-              </p>     
+                <br />
+                <button id="signup-option-button" class="alt-option-button">
+                  Cadastre-se!
+                </button>
+              </p>
             </div>
           </div>
         </form>
-        <form id="signup-form" class="logon-form" method="post" enctype="multipart/form-data">
+        <form
+          id="signup-form"
+          class="logon-form"
+          method="post"
+          enctype="multipart/form-data"
+        >
           <div id="signup">
             <div class="centered">
               <div class="text-input-container">
                 <i class="fas fa-signature"></i>
-                <input id="username" class="modal-text-input username-input" type="text" autocomplete="off" placeholder="Username" />
+                <input
+                  id="username"
+                  class="modal-text-input username-input"
+                  type="text"
+                  autocomplete="off"
+                  placeholder="Username"
+                />
               </div>
             </div>
             <div class="centered">
               <div class="text-input-container">
                 <i class="fas fa-user-circle"></i>
-                <input id="signup-email" class="modal-text-input email-input" type="text" autocomplete="off" placeholder="Email" />
+                <input
+                  id="signup-email"
+                  class="modal-text-input email-input"
+                  type="text"
+                  autocomplete="off"
+                  placeholder="Email"
+                />
               </div>
             </div>
             <div class="centered">
               <div class="text-input-container">
                 <i class="fas fa-lock"></i>
-                <input id="signup-password" class="modal-text-input password-input" type="password" autocomplete="off" placeholder="Senha" />
+                <input
+                  id="signup-password"
+                  class="modal-text-input password-input"
+                  type="password"
+                  autocomplete="off"
+                  placeholder="Senha"
+                />
               </div>
             </div>
             <div class="centered">
               <div class="text-input-container">
                 <i class="fas fa-lock"></i>
-                <input id="confirm-password" class="modal-text-input password-input" type="password" autocomplete="off" placeholder="Confirme sua senha" />
+                <input
+                  id="confirm-password"
+                  class="modal-text-input password-input"
+                  type="password"
+                  autocomplete="off"
+                  placeholder="Confirme sua senha"
+                />
               </div>
             </div>
             <div class="centered">
               <div id="avatar-related-container">
                 <div id="file-input-container">
-                  <input id="avatar-file-input" class="file-input" type="file" accept="image/png, image/jpg, image/jpeg, image/bmp" />
+                  <input
+                    id="avatar-file-input"
+                    class="file-input"
+                    type="file"
+                    accept="image/png, image/jpg, image/jpeg, image/bmp"
+                  />
                   <i class="fas fa-folder-plus"></i>
                 </div>
                 <div id="avatar-preview-container">
-                  <img id="avatar-preview">
+                  <img id="avatar-preview" />
                   <button class="close-button" id="dismiss-avatar-button">
                     &times;
                   </button>
@@ -82,8 +130,10 @@
           <div class="alt-option">
             <p>
               Já tem uma conta?
-              <br>
-              <button id="login-option-button" class="alt-option-button">Faça login!</button>
+              <br />
+              <button id="login-option-button" class="alt-option-button">
+                Faça login!
+              </button>
             </p>
           </div>
         </form>
