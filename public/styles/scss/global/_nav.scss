@@ -5,7 +5,7 @@ nav {
   flex-direction: row;
 
   width: 100%;
-  height: 75px;
+  height: 7.5vh;
 
   #logo-container {
     width: 15%;
@@ -16,7 +16,8 @@ nav {
     align-items: center;
     justify-content: center;
 
-    a, .logo {
+    a,
+    .logo {
       height: 100%;
     }
   }
@@ -49,7 +50,7 @@ nav {
       .fa-chevron-down,
       .fa-chevron-up {
         font-size: 1.8rem;
-        margin-left: .5rem;
+        margin-left: 0.5rem;
       }
 
       .fa-chevron-up {
@@ -64,8 +65,8 @@ nav {
 
         transition: color 0.5s;
       }
-      
-      #feed-button:hover { 
+
+      #feed-button:hover {
         cursor: pointer;
 
         transition: color 0.5s;
@@ -92,34 +93,34 @@ nav {
 
     #search-container {
       background-color: var(--special-bg-color);
-    
+
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-    
-      width: 35.0rem;
+
+      width: 35rem;
       height: 75%;
 
-      min-width: 35.0rem;
-    
+      min-width: 35rem;
+
       border-radius: 1rem;
-    
+
       margin: auto;
-        
+
       #search-input {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 1.8rem;
         font-weight: 600;
-  
+
         border: none;
         outline: none;
-        
+
         background: none;
         color: var(--text-color);
-        
+
         width: 70%;
-        
+
         margin: auto;
         margin-left: 2rem;
       }
@@ -136,7 +137,7 @@ nav {
 
         color: var(--alt-text-color);
         transition: color 0.5s;
-        
+
         .fa-search {
           font-size: 2.4rem;
 
@@ -151,11 +152,11 @@ nav {
         cursor: pointer;
       }
     }
-    
+
     #action-buttons-container {
       width: 40%;
       height: 100%;
-      
+
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -168,14 +169,14 @@ nav {
         background: var(--accent-color);
         transition: background 0.5s;
         color: var(--alt-bg-color);
-    
-        font-family: 'Poppins', sans-serif;
+
+        font-family: "Poppins", sans-serif;
         font-size: 1.8rem;
         font-weight: bold;
-      
+
         border-radius: 1rem;
-        
-        letter-spacing: .1rem;
+
+        letter-spacing: 0.1rem;
 
         height: 75%;
         width: 200px;
@@ -203,7 +204,7 @@ nav {
 
         color: var(--text-color);
 
-        border: .4rem solid var(--accent-color);
+        border: 0.4rem solid var(--accent-color);
 
         cursor: pointer;
       }
@@ -212,7 +213,7 @@ nav {
         background: var(--accent-color-hover);
         transition: background 0.5s, color 0.5s, border 0.5s;
 
-        border: .4rem solid var(--accent-color-hover);
+        border: 0.4rem solid var(--accent-color-hover);
       }
 
       // #logon-button.logged
@@ -247,7 +248,7 @@ nav {
 
       border-radius: 100%;
     }
-    
+
     .user-options-button {
       background: none;
 
@@ -324,11 +325,11 @@ nav {
     }
 
     #mobile-menu-container {
-      display: block; 
+      display: block;
     }
 
     #mobile-menu.active {
-      width: 100% ;
+      width: 100%;
       height: 100%;
 
       display: flex;
@@ -349,7 +350,6 @@ nav {
       }
 
       .mobile-menu-line:nth-child(3) {
-        
         transform: rotate(-45deg);
         position: absolute;
       }

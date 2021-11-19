@@ -19,19 +19,19 @@
   .modal-container {
     background: var(--alt-bg-color);
 
-    border-radius: 2.0rem;
+    border-radius: 2rem;
 
     width: 76.8rem;
-    min-width: 30.0rem;
+    min-width: 30rem;
 
     height: 64.8rem;
-    min-height: 15.0rem;
-    
-    padding: 2.0rem;
+    min-height: 15rem;
+
+    padding: 2rem;
 
     position: relative;
 
-    transition: background 0.5s, color 0.5s;
+    transition: background 0.25s, color 0.25s;
 
     .close-button {
       position: absolute;
@@ -43,7 +43,7 @@
       background: none;
       border: none;
       outline: none;
-      
+
       font-size: 36px;
       font-weight: bold;
 
@@ -98,7 +98,6 @@
 .modal.show {
   display: flex;
 }
-
 
 @media screen and (max-width: 960px) {
   .modal-container {

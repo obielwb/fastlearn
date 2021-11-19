@@ -128,80 +128,59 @@ nav #mobile-menu-container #mobile-menu .mobile-menu-line:nth-child(2) { opacity
 
 @media screen and (max-width: 960px) { #sidebar { display: none; } }
 
-#post-container { width: 100%; height: 85%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow-y: scroll; scrollbar-width: none; position: absolute; bottom: 0; }
-
-#post-container #no-posts-could-be-found { font-size: 20px; font-weight: 500; color: var(--text-color); }
-
-#post-container .post { margin-bottom: 1rem; width: 90%; height: 15rem; border: 0.4rem solid var(--special-bg-color); border-radius: .5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-#post-container .post .post-thumbnail-container { width: 12.5%; height: 100%; padding: 1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#post-container .post .post-thumbnail-container .post-thumbnail { border-radius: .5rem; width: 12rem; height: 12rem; }
-
-#post-container .post .post-thumbnail-container .post-thumbnail a, #post-container .post .post-thumbnail-container .post-thumbnail a:visited { color: var(--text-color); -webkit-transition: color 0.5s; transition: color 0.5s; text-decoration: none; }
-
-#post-container .post .post-thumbnail-container .post-thumbnail a:active, #post-container .post .post-thumbnail-container .post-thumbnail a:hover { color: var(--accent-color); -webkit-transition: color 0.5s; transition: color 0.5s; text-decoration: none; }
-
-#post-container .post .post-content { width: 52.5%; height: 10rem; padding-left: 1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#post-container .post .post-content a, #post-container .post .post-content a:visited, #post-container .post .post-content a:active, #post-container .post .post-content a:hover { color: var(--text-color); text-decoration: none; }
-
-#post-container .post .post-content .post-title { color: var(--text-color); font-size: 2rem; font-weight: 600; line-height: 2.4rem; letter-spacing: .05rem; }
-
-#post-container .post .post-content .post-information { color: var(--alt-text-color); margin-top: 2rem; font-size: 1.4rem; }
-
-#post-container .post .post-content .post-information .post-information-text { vertical-align: middle; font-weight: 500; }
-
-#post-container .post .post-content .post-information .post-information-text a, #post-container .post .post-content .post-information .post-information-text a:visited { color: var(--text-color); -webkit-transition: color 0.5s; transition: color 0.5s; text-decoration: none; }
-
-#post-container .post .post-content .post-information .post-information-text a:active, #post-container .post .post-content .post-information .post-information-text a:hover { color: var(--accent-color); -webkit-transition: color 0.5s; transition: color 0.5s; text-decoration: none; }
-
-#post-container .post .post-content .post-information .post-author-picture { vertical-align: middle; width: 3.2rem; height: 3.2rem; border-radius: 100%; margin-left: .5rem; margin-right: .5rem; }
-
-#post-container .post .post-content .post-information .post-author-username { color: var(--text-color); letter-spacing: 0.05rem; vertical-align: middle; }
-
-#post-container .post .post-comments { color: var(--alt-text-color); width: 25%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#post-container .post .post-comments .fa-comment-alt { vertical-align: middle; font-size: 1.8rem; margin-right: .5rem; }
-
-#post-container .post .post-comments .post-comments-text { font-size: 1.6rem; }
-
-#post-container .post .post-comments .post-comments-text .post-comments-label { margin-left: .6rem; }
-
-#post-container .post .post-votes { width: 15%; height: 100%; border-left: 0.4rem solid var(--special-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#post-container .post .post-votes .post-votes-text { color: var(--text-color); font-size: 2rem; letter-spacing: 1px; margin-top: .5rem; margin-bottom: .5rem; }
-
-#post-container .post .post-votes button { width: 6rem; height: 3rem; outline: none; border: none; background: var(--vote-bg-color); border-radius: .5rem; -webkit-transition: background 0.5s; transition: background 0.5s; -webkit-box-shadow: var(--vote-bg-color) 0rem 0.2rem 1rem 0rem; box-shadow: var(--vote-bg-color) 0rem 0.2rem 1rem 0rem; }
-
-#post-container .post .post-votes button:hover { cursor: pointer; background: var(--vote-bg-color-hover); -webkit-transition: background 0.5s; transition: background 0.5s; }
-
-#post-container .post .post-votes .fa-chevron-up { color: var(--accent-color); font-size: 2.4rem; }
-
-#post-container .post .post-votes .fa-chevron-down { color: var(--accent-color); font-size: 2.4rem; }
-
-#post-container::-webkit-scrollbar-track { background: var(--alt-bg-color); }
-
-#daily-random-post-container { width: 15%; height: 100%; }
-
-@media screen and (max-width: 960px) { .post { width: 100% !important; border-top-left-radius: 3rem; border-top-right-radius: 3rem; }
-  .post .post-comments, .post .post-votes { display: none !important; }
-  .post .post-thumbnail-container { width: 90px !important; height: 90px !important; }
-  .post .post-content { width: 70% !important; } }
-
-#container { width: 100%; height: 87.5vh; position: absolute; bottom: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-
-#container #user-communities-container { width: 15%; height: 100%; }
-
-#container #feed-container { width: 70%; height: 100%; border-top-left-radius: 2rem; border-top-right-radius: 2rem; font-family: 'Poppins', sans-serif; background-color: var(--alt-bg-color); position: relative; }
-
-#container #feed-container #feed-label { color: var(--text-color); font-size: 2.2rem; font-weight: 500; margin-top: 5rem; margin-left: 7rem; }
-
-#container #daily-random-post-container { width: 15%; height: 100%; }
-
-@media screen and (max-width: 960px) { #container #user-communities-container, #container #daily-random-post-container { display: none !important; }
-  #container #feed-container { width: 100%; }
-  #container #feed-container #feed-label { margin-top: 3rem; margin-left: 3rem; margin-bottom: 3rem; } }
-
 body { background: var(--bg-color); overflow: hidden; }
-/*# sourceMappingURL=home.css.map */
+
+body #container { width: 100%; height: 87.5vh; position: absolute; bottom: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+body #container #post-container { width: 70%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: var(--alt-bg-color); border-radius: 20px 20px 0 0; }
+
+body #container #post-container #back { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: left; -ms-flex-pack: left; justify-content: left; width: 90%; height: 12.5%; }
+
+body #container #post-container #back a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: var(--alt-text-color); font-size: 24px; font-weight: bold; text-decoration: none; }
+
+body #container #post-container #back a p { margin-left: 10px; }
+
+body #container #post-container #post { width: 90%; height: 87.5%; }
+
+body #container #post-container #post #title { width: 100%; height: 10%; font-family: "Poppins", sans-serif; font-size: 24px; color: var(--text-color); }
+
+body #container #post-container #post #header { width: 100%; height: 10%; font-family: "Poppins", sans-serif; font-size: 24px; color: var(--text-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+body #container #post-container #post #header #author { width: 30%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+body #container #post-container #post #header #author #author-avatar { width: 80px; height: 100%; border-radius: 100%; }
+
+body #container #post-container #post #header #author #data { width: 80%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+body #container #post-container #post #header #author #data #author-username, body #container #post-container #post #header #author #data #post-date { width: 90%; height: 50%; font-size: 18px; color: var(--alt-text-color); }
+
+body #container #post-container #post #header #author #data #author-username { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+body #container #post-container #post #header #author #data #author-username span { margin-left: 0.25em; color: var(--accent-color); }
+
+body #container #post-container #post #header #author #data #post-date { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+body #container #post-container #post #header #post-votes { width: 15%; height: 150%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+body #container #post-container #post #header #post-votes #post-votes-text { color: var(--text-color); font-size: 2rem; letter-spacing: 1px; margin-top: 0.5rem; margin-bottom: 0.5rem; }
+
+body #container #post-container #post #header #post-votes button { width: 6rem; height: 3rem; outline: none; border: none; background: var(--vote-bg-color); border-radius: 0.5rem; -webkit-transition: background 0.5s; transition: background 0.5s; -webkit-box-shadow: var(--vote-bg-color) 0rem 0.2rem 1rem 0rem; box-shadow: var(--vote-bg-color) 0rem 0.2rem 1rem 0rem; }
+
+body #container #post-container #post #header #post-votes button:hover { cursor: pointer; background: var(--vote-bg-color-hover); -webkit-transition: background 0.5s; transition: background 0.5s; }
+
+body #container #post-container #post #header #post-votes .fa-chevron-up { color: var(--accent-color); font-size: 2.4rem; }
+
+body #container #post-container #post #header #post-votes .fa-chevron-down { color: var(--accent-color); font-size: 2.4rem; }
+
+body #container #post-container #post #content { width: 100%; height: 80%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+body #container #post-container #post #content #post-image-container { width: 70%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+body #container #post-container #post #content #post-image-container #post-image { width: 100%; height: 90%; border-radius: 1em; }
+
+body #container #post-container #post #content #text { width: 25%; height: 90%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+body #container #post-container #post #content #text h3 { font-family: "Poppins", sans-serif; font-size: 22px; color: var(--text-color); font-weight: 500; text-align: right; }
+
+body #container #daily-random-post-container { width: 15%; height: 100%; }
+/*# sourceMappingURL=post.css.map */
