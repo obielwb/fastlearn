@@ -147,10 +147,10 @@ signupSubmit.addEventListener('click', () => {
         }
       })
       .catch((error) => {
-        submit.innerHTML = 'Sign Up';
-        submit.style.pointerEvents = 'auto';
-        submit.style.cursor = 'pointer';
-        submit.style.opacity = '1';
+        signupSubmit.innerHTML = 'Sign Up';
+        signupSubmit.style.pointerEvents = 'auto';
+        signupSubmit.style.cursor = 'pointer';
+        signupSubmit.style.opacity = '1';
 
         if (error.response) {
           const { status } = error.response;

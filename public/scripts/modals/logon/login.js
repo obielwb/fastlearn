@@ -44,6 +44,8 @@ loginSubmit.addEventListener('click', () => {
       .post('http://localhost:3030/users/auth', user)
       .then((response) => {
         if (response.data) {
+          console.log(response.status);
+
           const { token } = response.data;
 
           document.cookie = `session=${token}; max-age=259200`;
@@ -53,10 +55,10 @@ loginSubmit.addEventListener('click', () => {
         }
       })
       .catch((error) => {
-        submit.innerHTML = 'Login';
-        submit.style.pointerEvents = 'auto';
-        submit.style.cursor = 'pointer';
-        submit.style.opacity = '1';
+        loginSubmit.innerHTML = 'Login';
+        loginSubmit.style.pointerEvents = 'auto';
+        loginSubmit.style.cursor = 'pointer';
+        loginSubmit.style.opacity = '1';
 
         if (error.response) {
           const { status } = error.response;
