@@ -17,7 +17,8 @@
   "dependencies": {
     "axios": "^0.22.0",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "ejs": "^3.1.6",
