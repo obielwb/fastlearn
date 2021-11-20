@@ -109,7 +109,7 @@ nav {
       margin: auto;
 
       #search-input {
-        font-family: "Poppins", sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 1.8rem;
         font-weight: 600;
 
@@ -170,7 +170,7 @@ nav {
         transition: background 0.5s;
         color: var(--alt-bg-color);
 
-        font-family: "Poppins", sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 1.8rem;
         font-weight: bold;
 
@@ -185,7 +185,7 @@ nav {
       }
 
       #create-post-button {
-        // display: none;
+        display: none;
       }
 
       #create-post-button:hover {
@@ -218,7 +218,7 @@ nav {
 
       // #logon-button.logged
       #logon-button {
-        display: none;
+        // display: none;
       }
 
       .fa-sign-in-alt {

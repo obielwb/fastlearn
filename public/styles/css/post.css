@@ -46,7 +46,7 @@ nav #nav-util-container #feed-related-container #theme-button:hover { color: var
 
 nav #nav-util-container #search-container { background-color: var(--special-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 35rem; height: 75%; min-width: 35rem; border-radius: 1rem; margin: auto; }
 
-nav #nav-util-container #search-container #search-input { font-family: "Poppins", sans-serif; font-size: 1.8rem; font-weight: 600; border: none; outline: none; background: none; color: var(--text-color); width: 70%; margin: auto; margin-left: 2rem; }
+nav #nav-util-container #search-container #search-input { font-family: 'Poppins', sans-serif; font-size: 1.8rem; font-weight: 600; border: none; outline: none; background: none; color: var(--text-color); width: 70%; margin: auto; margin-left: 2rem; }
 
 nav #nav-util-container #search-container ::-webkit-input-placeholder { color: var(--alt-text-color); }
 
@@ -64,7 +64,9 @@ nav #nav-util-container #search-container #search-button:hover { color: var(--co
 
 nav #nav-util-container #action-buttons-container { width: 40%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-nav #nav-util-container #action-buttons-container button { border: none; outline: none; background: var(--accent-color); -webkit-transition: background 0.5s; transition: background 0.5s; color: var(--alt-bg-color); font-family: "Poppins", sans-serif; font-size: 1.8rem; font-weight: bold; border-radius: 1rem; letter-spacing: 0.1rem; height: 75%; width: 200px; cursor: pointer; }
+nav #nav-util-container #action-buttons-container button { border: none; outline: none; background: var(--accent-color); -webkit-transition: background 0.5s; transition: background 0.5s; color: var(--alt-bg-color); font-family: 'Poppins', sans-serif; font-size: 1.8rem; font-weight: bold; border-radius: 1rem; letter-spacing: 0.1rem; height: 75%; width: 200px; cursor: pointer; }
+
+nav #nav-util-container #action-buttons-container #create-post-button { display: none; }
 
 nav #nav-util-container #action-buttons-container #create-post-button:hover { background: var(--accent-color-hover); -webkit-transition: background 0.5s; transition: background 0.5s; }
 
@@ -73,8 +75,6 @@ nav #nav-util-container #action-buttons-container #create-post-button.logged { d
 nav #nav-util-container #action-buttons-container #logon-button { background: transparent; -webkit-transition: background 0.5s, color 0.5s, border 0.5s; transition: background 0.5s, color 0.5s, border 0.5s; color: var(--text-color); border: 0.4rem solid var(--accent-color); cursor: pointer; }
 
 nav #nav-util-container #action-buttons-container #logon-button:hover { background: var(--accent-color-hover); -webkit-transition: background 0.5s, color 0.5s, border 0.5s; transition: background 0.5s, color 0.5s, border 0.5s; border: 0.4rem solid var(--accent-color-hover); }
-
-nav #nav-util-container #action-buttons-container #logon-button { display: none; }
 
 nav #nav-util-container #action-buttons-container .fa-sign-in-alt { font-size: 26px; -webkit-transition: color 0.5s; transition: color 0.5s; color: var(--text-color); }
 

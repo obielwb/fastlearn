@@ -32,7 +32,7 @@
         }
       }
     }
-    
+
     #about-container.hide {
       display: none;
     }
@@ -62,8 +62,8 @@
         letter-spacing: 0.5px;
       }
 
-      input[type="text"],
-      input[type="password"] {
+      input[type='text'],
+      input[type='password'] {
         height: 50px;
         width: 100%;
 
@@ -103,17 +103,17 @@
         width: 90%;
 
         background: transparent;
-        
+
         color: var(--text-color);
-        
+
         outline: none;
-        border: .4rem solid var(--accent-color);
+        border: 0.4rem solid var(--accent-color);
         border-radius: 7.5px;
-        
+
         font-family: 'Poppins', sans-serif;
         font-size: 1.8rem;
         font-weight: bold;
-        
+
         cursor: pointer;
 
         transition: background 0.5s, color 0.5s, border 0.5s;
@@ -121,12 +121,29 @@
 
       .submit-button:hover {
         background: var(--accent-color-hover);
-        
+
         color: var(--alt-bg-color);
-        
-        border: .4rem solid var(--accent-color-hover);
+
+        border: 0.4rem solid var(--accent-color-hover);
 
         transition: background 0.5s, color 0.5s, border 0.5s;
+      }
+
+      .fa-spinner {
+        animation: spin 5s infinite linear;
+
+        color: var(--text-color);
+
+        font-size: 1em;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(1080deg);
+        }
       }
 
       #login-form {
@@ -202,9 +219,9 @@
             #file-input-container {
               width: 64px;
               height: 64px;
-              
+
               outline: none;
-              
+
               border-radius: 100%;
               border: 5px dashed var(--shadow-bg-color);
 
@@ -282,11 +299,12 @@
             #avatar-file-name {
               font-size: 1.7rem;
               font-family: 'Poppins', sans-serif;
-              font-weight: bold;
 
               color: var(--shadow-bg-color);
 
-              margin-top: 10px;
+              text-align: center;
+
+              margin-top: 1rem;
             }
 
             #avatar-label.hide {
