@@ -2,18 +2,21 @@ const { Model, DataTypes } = require('sequelize');
 
 class User extends Model {
   static init(sequelize) {
-    super.init({
-      id: {
-        type: DataTypes.STRING, 
-        primaryKey: true
+    super.init(
+      {
+        id: {
+          type: DataTypes.UUID,
+          primaryKey: true,
+        },
+        username: DataTypes.STRING,
+        email: DataTypes.STRING,
+        password: DataTypes.STRING,
+        avatar: DataTypes.BLOB,
       },
-      email: DataTypes.STRING,
-      password: DataTypes.STRING,
-      username: DataTypes.STRING,
-      avatar: DataTypes.STRING
-    }, {
-      sequelize
-    });
+      {
+        sequelize,
+      }
+    );
   }
 
   static associate(models) {
