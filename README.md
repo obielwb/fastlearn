@@ -17,6 +17,7 @@
 FastLearn. Revolucionando a maneira de aprender. Veja também a [API](https://github.com/oJPBarbosa/fastlearn-api)!
 
 ## 🙋 Como usar
+
 ```
 # Clone esse repositório
 $ git clone https://github.com/obielwb/fastlearn.git
@@ -28,7 +29,7 @@ $ cd fastlearn
 $ yarn
 
 # Instale as dependências de desenvolvimento
-$ yarn add nodemon -D
+$ yarn add ejs nodemon -D
 
 # Inicie a aplicação
 $ yarn start
