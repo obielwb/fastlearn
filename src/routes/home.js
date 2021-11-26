@@ -11,20 +11,23 @@ router.get('', async (req, res) => {
   let communities = [];
 
   try {
-    const { data, status } = await axios.get('https://api.newscatcherapi.com/v2/search', {
-      params: {
-        q: 'unicamp',
-        lang: 'en',
-        sort_by: 'relevancy',
-        page: '1'
-      },
-      headers: {
-        'x-api-key': `'${process.env.NEWSCATCHER_API_KEY}'`
-      },
-    });
+    const { data, status } = await axios.get(
+      'https://api.newscatcherapi.com/v2/search',
+      {
+        params: {
+          q: 'unicamp',
+          lang: 'en',
+          sort_by: 'relevancy',
+          page: '1',
+        },
+        headers: {
+          'x-api-key': `'${process.env.NEWSCATCHER_API_KEY}'`,
+        },
+      }
+    );
 
     if (status == 200) {
-      data.articles.forEach(article => {
+      data.articles.forEach((article) => {
         const post = {
           author: article.author,
           comments: parseInt(article._score),
@@ -45,10 +48,7 @@ router.get('', async (req, res) => {
         posts.push(post);
         communities.push(community);
       });
-    }
-
-    else
-      posts = null;
+    } else posts = null;
   } catch (error) {
     console.log(error);
   }
@@ -59,6 +59,8 @@ router.get('', async (req, res) => {
   //   if (response.status == 'ok')
   //     posts = response;
   // } catch (error) {}
+
+  res.locals.posts = posts;
 
   res.render('home', { user, posts, communities });
 });

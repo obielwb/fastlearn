@@ -37,25 +37,22 @@
           >
         </div>
         <div id="post">
-          <h1 id="title">{ post.title }</h1>
+          <h1 id="title"><%- post.title %></h1>
           <div id="header">
             <div id="author">
-              <img
-                id="author-avatar"
-                src="https://via.placeholder.com/1040x240"
-              />
+              <img id="author-avatar" src="<%- post.image %>" />
               <div id="data">
                 <h2 id="author-username">
-                  Postado por <span>{ post.author }</span>
+                  Postado por <span><%- post.author %></span>
                 </h2>
-                <h2 id="post-date">{ post.date }</h2>
+                <h2 id="post-date"><%- post.date %></h2>
               </div>
             </div>
             <div id="post-votes">
               <button id="up-vote-button">
                 <i class="fas fa-chevron-up"></i>
               </button>
-              <h3 id="post-votes-text">{ post.votes }</h3>
+              <h3 id="post-votes-text"><%- post.votes %></h3>
               <button id="down-vote-button">
                 <i class="fas fa-chevron-down"></i>
               </button>
@@ -63,10 +60,10 @@
           </div>
           <div id="content">
             <div id="post-image-container">
-              <img id="post-image" src="https://via.placeholder.com/1040x240" />
+              <img id="post-image" src="<%- post.image %>" />
             </div>
             <div id="text">
-              <h3>{ post.text }</h3>
+              <h3><%- post.content %></h3>
             </div>
           </div>
         </div>
