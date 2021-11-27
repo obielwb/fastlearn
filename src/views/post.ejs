@@ -29,45 +29,47 @@
 
     <div id="container">
       <%- include('./partials/sidebar.ejs')%>
-      <div id="post-container">
-        <div id="back">
-          <a href="/"
-            ><i class="fas fa-arrow-left"></i>
-            <p>Voltar</p></a
-          >
-        </div>
-        <div id="post">
-          <h1 id="title"><%- post.title %></h1>
-          <div id="header">
-            <div id="author">
-              <img id="author-avatar" src="<%- post.image %>" />
-              <div id="data">
-                <h2 id="author-username">
-                  Postado por <span><%- post.author %></span>
-                </h2>
-                <h2 id="post-date"><%- post.date %></h2>
+      <section id="post">
+        <div id="post-container">
+          <div id="back">
+            <a href="/"
+              ><i class="fas fa-arrow-left"></i>
+              <p>Voltar</p></a
+            >
+          </div>
+          <div id="post">
+            <h1 id="title"><%- post.title %></h1>
+            <div id="header">
+              <div id="author">
+                <img id="author-avatar" src="<%- post.image %>" />
+                <div id="data">
+                  <h2 id="author-username">
+                    Postado por <span><%- post.author %></span>
+                  </h2>
+                  <h2 id="post-date"><%- post.date %></h2>
+                </div>
+              </div>
+              <div id="post-votes">
+                <button id="up-vote-button">
+                  <i class="fas fa-chevron-up"></i>
+                </button>
+                <h3 id="post-votes-text"><%- post.votes %></h3>
+                <button id="down-vote-button">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
               </div>
             </div>
-            <div id="post-votes">
-              <button id="up-vote-button">
-                <i class="fas fa-chevron-up"></i>
-              </button>
-              <h3 id="post-votes-text"><%- post.votes %></h3>
-              <button id="down-vote-button">
-                <i class="fas fa-chevron-down"></i>
-              </button>
-            </div>
-          </div>
-          <div id="content">
-            <div id="post-image-container">
-              <img id="post-image" src="<%- post.image %>" />
-            </div>
-            <div id="text">
-              <h3><%- post.content %></h3>
+            <div id="content">
+              <div id="post-image-container">
+                <img id="post-image" src="<%- post.image %>" />
+              </div>
+              <div id="text">
+                <h3><%- post.content %></h3>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div id="daily-random-post-container"></div>
     </div>
 
